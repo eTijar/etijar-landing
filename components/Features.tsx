@@ -96,6 +96,7 @@ export default function Features() {
         <img className="relative mx-auto" width={490} src="/features.svg" alt="" />
       </div>
     </div>
+    
     <svg className="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12" width={404} height={784} fill="none" viewBox="0 0 404 784" aria-hidden="true">
       <defs>
         <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x={0} y={0} width={20} height={20} patternUnits="userSpaceOnUse">
