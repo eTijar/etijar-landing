@@ -9,6 +9,7 @@ export default function Home() {
       <Head>
         <title>eTijar</title>
         <link rel="icon" href="/favicon.ico" />
+        
       </Head>
       <Hero/>
       <Features/>
