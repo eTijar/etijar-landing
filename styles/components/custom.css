@@ -1,1 +1,310 @@
 /* Add custom components here */
+/*For here.tsx*/
+*{
+    font-family: 'Cabin', sans-serif;
+}
+
+.heroo{
+    backdrop-filter:blur(2rem);
+    -webkit-backdrop-filter:blur(2rem);
+    z-index: 2;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255,0.7),rgba(255,255,255,0.6));
+}
+.colors1{
+    width:250px;
+    height:250px;
+    background-color: #b270bb;
+    border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
+    position: absolute;
+    top:200px;
+    left:80px;
+    z-index: 1;
+}
+.colors2{
+    position: absolute;
+    width:350px;
+    height:350px;
+    background-color: #9ce7b9;
+    border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
+    top:80px;
+    left:450px;
+    z-index: 1;
+}
+.colors3{
+    position: absolute;
+    width:150px;
+    height:150px;
+    background-color: #84dcdf;
+    border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
+    top:-80px;
+    left:0px;
+    z-index: 1;
+}
+.colors4{
+    position: absolute;
+    width:150px;
+    height:150px;
+    background-color: #84dcdf;
+    border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
+    top:-80px;
+    right:200px;
+    z-index: 1;
+}
+.hero-eti{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.hero-btn{
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7,);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7,); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.hero-glass{
+    background-image: linear-gradient(to right bottom, rgba(101, 199, 247,0.2),rgba(255,255,255,0.1));
+    backdrop-filter:blur(2rem);
+    -webkit-backdrop-filter:blur(2rem);
+    font-size: 1rem;
+    line-height:1.5rem;
+}
+.glass-one{
+    top:10rem;
+    left:2.5rem
+}
+.glass-two{
+   top: -3rem;
+   left:24rem
+}
+.glass-three{
+    top:16rem;
+    left:22rem
+    
+}
+/*Hero plus*/
+.wave{
+    position: absolute;
+    top:-15rem;
+    z-index: 10;
+}
+.blur:before{
+    content:'';
+    position: absolute;
+    width: 12rem;
+    height:10rem;
+    background-color: #ff9399;
+    border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
+    position: absolute;
+    top:170px;
+    left:40px;
+    z-index: 1;
+}
+.box1:before{
+    content:'١';
+    position: absolute;
+    font-size: 10rem;
+    color:#0052D4;
+    font-weight: bolder;
+    font-family: 'Concert One', cursive;
+    opacity: 0.1;
+    left:-60px;
+    top:60px;
+}
+.box2:before{
+    content:'٢';
+    position: absolute;
+    font-size: 10rem;
+    color:#0052D4;
+    font-weight: bolder;
+    font-family: 'Concert One', cursive;
+    opacity: 0.1;
+    left:-60px;
+    top:60px;;
+}
+.box3:before{
+    content:'٣';
+    position: absolute;
+    font-size: 10rem;
+    color:#0052D4;
+    font-weight: bolder;
+    font-family: 'Concert One', cursive;
+    opacity: 0.1;
+    left:-60px;
+    top:60px;
+    }
+    .foot{
+        position: absolute;
+        width:220px;
+        height:220px;
+        background-color: #fffb1c;
+        border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
+        top:80px;
+        left:150px;
+        z-index: 1;
+    }
+    .foot:before{
+        content:'';
+        position: absolute;
+        width:130px;
+        height:130px;
+        background-color: #ff0077;
+        border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
+        top:40px;
+        left:450px;
+        z-index: 1;
+    }
+    .foot:after{
+        content:'';
+        position: absolute;
+        width:110px;
+        height:110px;
+        background-color: #1eff00;
+        border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
+        top:0px;
+        left:790px;
+        z-index: 1;
+    }
+    
+@media screen and (max-width: 1200px) {
+    .hero-glass{
+        font-size: 12px;
+    }
+    .glass-one{
+        left:1.5rem
+    }
+    .glass-two{
+        top:-4rem;
+       left:20rem
+    }
+    .glass-three{
+        top:14rem;
+        left:19rem
+        
+    }
+    .wave{
+        top:-13rem;
+    }
+    .foot:before{
+        left:380px;
+    }
+    .foot:after{
+        left:630px;
+    }
+    
+}
+@media screen and (max-width: 1023px) {
+    .glass-one{
+        left:0;
+    }
+    .glass-two{
+        top:0;
+       left:18rem
+    }
+    .glass-three{
+        top:14rem;
+        left:19rem
+        
+    }
+    .wave{
+        top:-8rem;
+    }
+    .blur:before{
+        top:130px;
+    }
+    .foot{
+        width:200px;
+        height:200px;
+        top:120px;
+        left:60px;
+    }
+    .foot:before{
+        left:260px;
+        top:100px;
+    }
+    .foot:after{
+        left:390px;
+        top:60px;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .glass-one{
+        left:2rem;
+    }
+    .glass-two{
+        top:0;
+       left:15rem
+    }
+    .glass-three{
+        top:18rem;
+        left:19rem
+        
+    }
+    .wave{
+        top:-6rem;
+    }
+    .foot{
+        top:130px;
+        left:60px;
+    }
+    .foot:before{
+        left:260px;
+        top:100px;
+    }
+    .foot:after{
+        left:220px;
+        top:180px;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .hero-glass{
+        transform: scale(0.8);
+        
+    }
+    .glass-one{
+        top:-20px;
+        left:-10px;
+    }
+    .glass-two{
+        top:-12px;
+       left:15rem
+    }
+    .glass-three{
+        top:13rem;
+        left:-5rem;
+        transform: scale(0.6);
+        
+    }
+    .wave{
+        top:-5rem;
+    }
+    .foot{
+        top:110px;
+        left:20px;
+    }
+    .foot:before{
+        left:200px;
+        top:130px;
+    }
+    .foot:after{
+        left:120px;
+        top:160px;
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    .glass-two{
+        top:-12px;
+       left:13rem
+    }
+    .wave{
+        top:-4rem;
+    }
+    .blur:before{
+        top:200px;
+        left:10px;
+    }
+    .foot:before{
+        left:100px;
+        top:220px;
+    }
+}

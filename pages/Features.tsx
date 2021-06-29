@@ -1,5 +1,55 @@
+import Head from 'next/head';
+import Link from 'next/link';
+import React, { useState } from 'react';
+import { Transition } from '@headlessui/react';
 export default function Features() {
+	const [mobileMenu, setMobileMenu] = useState(false);
 	return (
+		<>
+			<Head>
+				<title>eTijar - Product Page</title>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
+			<nav className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+					<div className="flex items-center flex-1">
+						<div className="flex items-center justify-between w-full md:w-auto">
+							<a href="#">
+								<span className="sr-only">Etijar</span>
+								<img className="h-8 w-auto sm:h-14" src="/etijar-logo.svg" alt="" />
+							</a>
+							<div className="-mr-2 flex items-center md:hidden">
+								<button onClick={()=>setMobileMenu(true)} type="button" className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500" aria-expanded="false">
+									<span className="sr-only">Open main menu</span>
+									{/* Heroicon name: outline/menu */}
+									<svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div className="hidden md:block md:ml-10 md:space-x-10">
+							<Link href="/" passHref>
+								<a className="font-medium text-gray-500 hover:text-gray-900">Home</a>
+							</Link>
+							<Link href="/#features" passHref>
+								<a className="font-medium text-gray-500 hover:text-gray-900">Features</a>
+							</Link>
+							<Link href="/product" passHref>
+								<a className="font-medium text-gray-500 hover:text-gray-900">Product</a>
+							</Link>
+							<Link href="/contact" passHref>
+								<a className="font-medium text-gray-500 hover:text-gray-900">Contact Us</a>
+							</Link>
+						</div>
+					</div>
+					<div className="hidden md:block text-right">
+						<span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
+							<a href="#" className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-secondary-600 bg-white hover:bg-gray-50">
+								Log in
+							</a>
+						</span>
+					</div>
+				</nav>
 		<section id="features" className="py-16 bg-gray-50 overflow-hidden lg:py-24">
 			<div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
 				<svg className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width={404} height={784} fill="none" viewBox="0 0 404 784" aria-hidden="true">
@@ -164,5 +214,6 @@ export default function Features() {
 				</div>
 			</div>
 		</section>
+		</>
 	);
 }

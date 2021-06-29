@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import FAQs from '../components/FAQs'
-import Features from '../components/Features'
 import Hero from '../components/Hero'
+import HeroPlus from '../components/HeroPlus'
+import MaxFooter from '../components/MaxFooter'
 
 export default function Home() {
   return (
@@ -9,11 +10,10 @@ export default function Home() {
       <Head>
         <title>eTijar</title>
         <link rel="icon" href="/favicon.ico" />
-        
       </Head>
       <Hero/>
-      <Features/>
-      <FAQs/>
+      <HeroPlus />
+      <MaxFooter />
     </>
   )
 }
