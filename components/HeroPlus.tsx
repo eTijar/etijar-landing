@@ -50,19 +50,19 @@ export default function HeroPlus() {
                         <div className=" relative w-3/4 lg:w-1/4 mb-10 lg:mb-2 bg-white shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box1">
                         <h2 className="text-lg text-blue-900 font-bold mb-3">Personal loans for the everyday borrower</h2>
                         eTijar offer access to personal loans for middle-income borrowers that need help with things like unexpected personal expenses in the form of Qard Hasn a Benevolent Loan at 0% interest forever.
-                          <button type="button" Link="#" className="block px-3 py-2 my-2 text-sm bg-red-300 rounded-full text-white hover:bg-black duration-100">Learn more</button> 
+                          <button type="button" className="block px-3 py-2 my-2 text-sm bg-red-300 rounded-full text-white hover:bg-black duration-100">Learn more</button> 
                         </div>
                         <div className="relative w-3/4 lg:w-1/4 mb-10 lg:mb-2 bg-white shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box2">
                         <h2 className="text-lg text-blue-900 font-bold mb-3">Transparent financing for business</h2>
                         eTijar helps you build your small business and grow while staying within your personal beliefs, ethical and shariah business rules.
-                          <button type="button" Link="#" className=" block px-3 py-2 my-2 text-sm bg-red-300 rounded-full text-white hover:bg-black duration-100">Learn more</button> 
+                          <button type="button" className=" block px-3 py-2 my-2 text-sm bg-red-300 rounded-full text-white hover:bg-black duration-100">Learn more</button> 
                         </div>
                         <div className="relative w-3/4 lg:w-1/4 mb-10 lg:mb-2 shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box3">
                         <h2 className="text-lg text-blue-900 font-bold mb-3">Ethical Wealth and Growth</h2>
                         You do not and should never compromise on your beliefs to make money.
                         eTijar provides a means for you to invest and grow your money safely and securely for the medium and long-term that will not conflict with your belief or principles.
 
-                          <button type="button" Link="#" className=" block px-3 py-2 my-2 text-sm bg-red-300 rounded-full text-white hover:bg-black duration-100">Learn more</button> 
+                          <button type="button" className=" block px-3 py-2 my-2 text-sm bg-red-300 rounded-full text-white hover:bg-black duration-100">Learn more</button> 
                         </div>
                         </div>
                 </div>
