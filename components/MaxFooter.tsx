@@ -6,7 +6,7 @@ export default function MaxFooter() {
                 <div className="foot"></div>
             <svg className="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#60A5FA" fill-opacity="1" d="M0,160L120,181.3C240,203,480,245,720,218.7C960,192,1200,96,1320,48L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
                 <div className=" relative w-full lg:w-5/6 rounded py-10 px-14 flex items-center justify-between flex-col  z-10 heroo">
-                    <h2 className="text-xl lg:text-2xl font-black text-blue-900 mb-10">No hidden fees and full transparency, know where your money is at all times.
+                    <h2 className="text-xl lg:text-2xl font-black text-gray-800 mb-10">No hidden fees and full transparency, know where your money is at all times.
                     When you do well, that is when eTijar does well, our values align.</h2>
 
                     <div className="w-full flex justify-around items-center flex-wrap pb-2">

@@ -178,8 +178,7 @@ export default function Hero() {
 							<div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
 								<button  type="button" className="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500">
 									<span className="sr-only">Watch our video to learn more</span>
-									<Image className="w-full" src = "/HeroImage.jpg" alt="heroimg" width={500}
-        							height={400} />
+									<img className="w-full" src = "/HeroImage.jpg" alt="heroimg" />
 
 								</button>
 							</div>
