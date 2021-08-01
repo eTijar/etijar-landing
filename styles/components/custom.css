@@ -45,7 +45,7 @@
     width:150px;
     height:150px;
     background-color: #84dcdf;
-    border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
+    border-radius: 65% 3fffffffffffffffffffffffffffffffffv5% 42% 58% / 52% 33% 67% 48% ;
     top:-80px;
     right:200px;
     z-index: 1;
@@ -67,8 +67,8 @@
     line-height:1.5rem;
 }
 .glass-one{
-    top:10rem;
-    left:2.5rem
+    top:8rem;
+    left:0
 }
 .glass-two{
    top: -3rem;
@@ -168,7 +168,7 @@
         font-size: 12px;
     }
     .glass-one{
-        left:1.5rem
+        left:0
     }
     .glass-two{
         top:-4rem;
@@ -269,7 +269,7 @@
        left:15rem
     }
     .glass-three{
-        top:13rem;
+        top:14rem;
         left:-5rem;
         transform: scale(0.6);
         

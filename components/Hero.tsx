@@ -2,10 +2,16 @@ import Link from "next/link"
 import { useState } from "react";
 import {Transition} from "@headlessui/react";
 import Image from 'next/image';
-import HeroImage from '../public/HeroImage.jpg';
+import phoneMockup from '../public/phoneMockup.png';
+import { motion, AnimatePresence, useTransform, useViewportScroll } from 'framer-motion'
+
+const transition = { duration:1, ease: [0.43, 0.13, 0.23, 0.96] }
 
 export default function Hero() {
   const [mobileMenu,setMobileMenu] = useState(false);
+  const [istoggled,setToggle] = useState(false);
+  const {scrollYProgress} = useViewportScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 3])
 	return (
 		<div className="relative overflow-hidden max-h-auto mb-34">
 
@@ -25,7 +31,7 @@ export default function Hero() {
 					<div className="flex items-center justify-between w-full md:w-auto">
 						<a href="#">
 							<span className="sr-only">Etijar</span>
-							<img className="h-6 w-12 sm:h-14" src="/logo.png" alt="" />
+							<img className=" w-20 sm:h-14" src="/logo.png" alt="" />
 						</a>
 						<div className="-mr-2 flex items-center md:hidden">
 							<button onClick={()=>setMobileMenu(true)} type="button" className="bg-white shadow-lg mr-4 rounded-md p-3 inline-flex items-center justify-center text-gray-500 hover:text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500" aria-expanded="false">
@@ -37,7 +43,7 @@ export default function Hero() {
 							</button>
 						</div>
 					</div>
-					<div className="hidden md:block md:ml-10 md:space-x-10">
+					<div className=" hidden md:block md:ml-10 md:space-x-10">
 						<Link href="/" passHref><a  className="font-medium text-gray-500 hover:text-gray-900">
 							Home
 						</a>
@@ -73,7 +79,7 @@ export default function Hero() {
 				<div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
 					<div className="px-5 pt-4 flex items-center justify-between">
 						<div>
-							<img className="h-6 w-12 sm:h-14" src="/logo.png" alt="" />
+							<img className="h-20 sm:h-14" src="/logo.png" alt="" />
 						</div>
 						<div className="-mr-2">
 							<button onClick={()=>setMobileMenu(false)} type="button" className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500">
@@ -125,7 +131,7 @@ export default function Hero() {
 									</a>
 								</div>
 								<div className="mt-7 sm:max-w-xl">
-									<h1 className="text-2xl font-bold text-gray-600 mb-4 tracking-tight sm:text-5xl hero-eti">eTijar</h1>
+									<motion.h1 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.8, ...transition}}} className="text-2xl font-bold text-gray-600 mb-4 tracking-tight sm:text-5xl hero-eti">eTijar</motion.h1>
 									<h2 className="text-3xl font-bold text-blue-900 tracking-tight sm:text-6xl hero-eti">Make profit not Interest</h2>
 									<p className="mt-5 text-base text-gray-500">Providing 100% ethical and interest-free. We are digitizing how you handle debt, save, invest and spend money.</p>
 								</div>
@@ -173,30 +179,39 @@ export default function Hero() {
 								</div>
 							</div>{' '}
 						</div>
-						<div className="mt-10 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+						<div className="mt-10 p-6 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
 							
-							<div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-								<button  type="button" className="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500">
-									<span className="sr-only">Watch our video to learn more</span>
-									<img className="w-full" src = "/HeroImage.jpg" alt="heroimg" />
+									<motion.img style= {{scale:scale}} className="w-full rounded-lg" src = "/phoneMockup.png" alt="heroimg" />
 
-								</button>
-							</div>
-							<div className="absolute p-5 w-32 shadow-lg rounded flex items-center flex-col hero-glass glass-one">
-							<img className="w-10 bg-blue-300 p-2 rounded-full" src= "/target.svg" alt="target" />
-								<div className="">Achieve your financial Goals without Compromise</div></div>
-							<div className="absolute p-5 w-42 shadow-lg rounded flex items-center flex-col hero-glass glass-two">
-								<img className="w-10 bg-blue-300 p-2 rounded-full" src= "/connection.svg" alt="con" />
+									
+							<motion.div initial={{scale:0.4}} animate={{scale:1}} transition={transition}  className="sm:block hidden absolute p-5 w-42 shadow-lg rounded flex items-center flex-col hero-glass glass-two">
+								<img className="w-10 bg-yellow-300 p-2 rounded-full" src= "/connection.svg" alt="con" />
 							<div className="">Use secure Banking links to connect your bank accounts and credit cards
-							to view all your transactions in one place</div> </div>
-							<div className="absolute p-5 w-42 shadow-lg rounded flex items-center flex-col hero-glass glass-three">
-							<img className="w-10 bg-blue-300 p-2 rounded-full" src= "/stats.svg" alt="stats" />
+							to view all your transactions in one place</div> </motion.div>
+							<motion.div initial={{scale:0.4}} animate={{scale:1}} transition={transition} className="sm:block hidden absolute p-5 w-42 shadow-lg rounded flex items-center flex-col hero-glass glass-three">
+							<img className="w-10 bg-purple-300 p-2 rounded-full" src= "/stats.svg" alt="stats" />
 								<div className=""> Zero Interest, Transparent financing for 
+							small-businesses. Manage your business in one place </div></motion.div>
+							{/*for mobile*/}
+							<div className="relative w-full flex flex-col items-center p-12">
+							<div className="block sm:hidden bg-white hover:bg-yellow-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
+								<img className="w-10 bg-yellow-300 p-2 rounded-full shadow-lg" src= "/connection.svg" alt="con" />
+							<div className="mt-5">Use secure Banking links to connect your bank accounts and credit cards
+							to view all your transactions in one place</div> </div>
+							<div className="block sm:hidden bg-white hover:bg-purple-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
+							<img className="w-10 bg-purple-300 p-2 rounded-full shadow-lg" src= "/stats.svg" alt="stats" />
+								<div className="mt-5"> Zero Interest, Transparent financing for 
 							small-businesses. Manage your business in one place </div></div>
+							<div className="block sm:hidden bg-white hover:bg-red-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
+							<img className="w-10 bg-red-300 p-2 rounded-full shadow-lg" src= "/target.svg" alt="target" />
+								<div className="mt-5">Achieve your financial goals without compromise </div></div>
+							</div>
+							
 							</div>
 					</div>
 				</main>
 			</div>
+							
 		</div>
 	);
 }
