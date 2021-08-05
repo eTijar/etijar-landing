@@ -7,7 +7,7 @@ export default function Features() {
 	return (
 		<>
 			<Head>
-				<title>eTijar - Product Page</title>
+				<title>eTijar - features Page</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<nav className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">

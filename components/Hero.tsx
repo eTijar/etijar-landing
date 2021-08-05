@@ -1,119 +1,28 @@
 import Link from "next/link"
 import { useState } from "react";
-import {Transition} from "@headlessui/react";
 import Image from 'next/image';
+import Header from './Header'
 import phoneMockup from '../public/phoneMockup.png';
 import { motion, AnimatePresence, useTransform, useViewportScroll } from 'framer-motion'
 
 const transition = { duration:1, ease: [0.43, 0.13, 0.23, 0.96] }
 
 export default function Hero() {
-  const [mobileMenu,setMobileMenu] = useState(false);
   const [istoggled,setToggle] = useState(false);
   const {scrollYProgress} = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 3])
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 4])
 	return (
-		<div className="relative overflow-hidden max-h-auto mb-34">
-
+		<motion.div exit={{opacity:0}} transition={{duration:1}} className="relative overflow-hidden max-h-auto mb-34">
 			{/*Glass color effects*/}
 			<div className="colors1"></div>
 			<div className="colors2"></div>
 			<div className="colors3"></div>
 			<div className="colors4"></div>
-			<div className="hidden lg:block lg:absolute lg:inset-0" aria-hidden="true">
-				
-			</div>
-			<div>
-			</div>
-			<div className="relative pt-6 pb-16 sm:pb-24 lg:pb-24 heroo">
-			<nav className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
-				<div className="flex items-center flex-1">
-					<div className="flex items-center justify-between w-full md:w-auto">
-						<a href="#">
-							<span className="sr-only">Etijar</span>
-							<img className=" w-20 sm:h-14" src="/logo.png" alt="" />
-						</a>
-						<div className="-mr-2 flex items-center md:hidden">
-							<button onClick={()=>setMobileMenu(true)} type="button" className="bg-white shadow-lg mr-4 rounded-md p-3 inline-flex items-center justify-center text-gray-500 hover:text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500" aria-expanded="false">
-								<span className="sr-only">Open main menu</span>
-								{/* Heroicon name: outline/menu */}
-								<svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-								</svg>
-							</button>
-						</div>
-					</div>
-					<div className=" hidden md:block md:ml-10 md:space-x-10">
-						<Link href="/" passHref><a  className="font-medium text-gray-500 hover:text-gray-900">
-							Home
-						</a>
-                        </Link>
-						<Link href="/" passHref><a  className="font-medium text-gray-500 hover:text-gray-900">
-							About
-						</a>
-                        </Link>
-						<Link href="/features" passHref><a className="font-medium text-gray-500 hover:text-gray-900">
-							Features
-						</a>
-                        </Link>
-						<Link href="/product" passHref><a  className="font-medium text-gray-500 hover:text-gray-900">
-							Product
-						</a>
-                        </Link>
-                        <Link href="/contact" passHref>
-                        <a  className="font-medium text-gray-500 hover:text-gray-900">
-							Contact Us
-						</a>
-                        </Link>
-					</div>
-				</div>
-				<div className="hidden md:block text-right">
-					<span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-						<a href="#" className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md bg-blue-900 text-blue-100 hover:bg-blue-500">
-							Log in
-						</a>
-					</span>
-				</div>
-			</nav>
-			<Transition show={mobileMenu} enter="duration-150 ease-out" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="duration-100 ease-in" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95" className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-				<div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-					<div className="px-5 pt-4 flex items-center justify-between">
-						<div>
-							<img className="h-20 sm:h-14" src="/logo.png" alt="" />
-						</div>
-						<div className="-mr-2">
-							<button onClick={()=>setMobileMenu(false)} type="button" className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500">
-								<span className="sr-only">Close main menu</span>
-								{/* Heroicon name: outline/x */}
-								<svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-								</svg>
-							</button>
-						</div>
-					</div>
-					<div className="px-2 pt-2 pb-3 space-y-1">
-						<Link href="/" passHref><a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-							Home
-						</a></Link>
-						<Link href="/" passHref><a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-							About
-						</a></Link>
-						<Link href="/#features" passHref><a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-							Features
-						</a></Link>
-						<Link href="/product" passHref><a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-							Product
-						</a></Link>
+			<motion.div className="relative pt-6 pb-16 sm:pb-24 lg:pb-24 heroo">
 
-                        <Link href="/contact" passHref><a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-							Contact Us
-						</a></Link>
-					</div>
-					<a href="#" className="block w-full px-5 py-3 text-center font-medium text-secondary-600 bg-gray-50 hover:bg-gray-100">
-						Log in
-					</a>
-				</div>
-			</Transition>
+				{/*******************Header**********************/}
+			<Header />
+			
 				<main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-24">
 					<div className="lg:grid lg:grid-cols-12 lg:gap-8">
 						<div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
@@ -131,9 +40,9 @@ export default function Hero() {
 									</a>
 								</div>
 								<div className="mt-7 sm:max-w-xl">
-									<motion.h1 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.8, ...transition}}} className="text-2xl font-bold text-gray-600 mb-4 tracking-tight sm:text-5xl hero-eti">eTijar</motion.h1>
-									<h2 className="text-3xl font-bold text-blue-900 tracking-tight sm:text-6xl hero-eti">Make profit not Interest</h2>
-									<p className="mt-5 text-base text-gray-500">Providing 100% ethical and interest-free. We are digitizing how you handle debt, save, invest and spend money.</p>
+									<motion.h1 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.4, ...transition}}} className="text-2xl font-bold text-gray-600 mb-4 tracking-tight sm:text-5xl hero-eti">eTijar</motion.h1>
+									<motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.6, ...transition}}} className="text-3xl font-bold text-blue-900 tracking-tight sm:text-6xl hero-eti">Make profit not Interest</motion.h2>
+									<motion.p initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.8, ...transition}}} className="mt-5 text-base text-gray-500">Providing 100% ethical and interest-free. We are digitizing how you handle debt, save, invest and spend money.</motion.p>
 								</div>
 								<form action="#" className="mt-8 sm:max-w-lg sm:w-full sm:flex">
 									<div className="min-w-0 flex-1">
@@ -210,8 +119,8 @@ export default function Hero() {
 							</div>
 					</div>
 				</main>
-			</div>
+			</motion.div>
 							
-		</div>
+		</motion.div>
 	);
 }

@@ -29,15 +29,15 @@ export default function HeroPlus() {
                 <div className="relative mt-8 w-full lg:w-2/6 h-auto flex flex-col flex-wrap blur mb-8">
                     <h2 className="text-gray-700 text-lg md:text-2xl font-bold m-4" >At eTijar, we believe that the best opportunities should be seized, on your own terms.</h2>
                     <div className=" px-4 py-5 pb-2 rounded font-base text-gray-600 flex items-center heroo">
-                        <img className="w-12 h-12 mr-2 p-2 bg-red-300 rounded" src="handcoin.png" alt="hand-coin" />
+                        <img className="w-12 h-12 mr-2 p-2 bg-red-300 rounded shadow-xl" src="handcoin.png" alt="hand-coin" />
                         <p>Achieve your financial goals by investing in Islamic Investments</p>
                     </div>
                     <div className="px-4 py-5 pb-2 rounded font-base text-gray-600 flex items-center heroo">
-                    <img className="w-12 h-12 mr-2 p-2 bg-yellow-300 rounded" src="banking.png" alt="banking" />
+                    <img className="w-12 h-12 mr-2 p-2 bg-yellow-300 rounded shadow-xl" src="banking.png" alt="banking" />
                         <p>Connect all your bank accounts in one place</p>
                     </div>
                     <div className="px-4 py-5 pb-2 rounded font-base text-gray-600 flex items-center heroo">
-                    <img className="w-12 h-12 mr-2 p-2 bg-green-300 rounded" src="insight.png" alt="insight" />
+                    <img className="w-12 h-12 mr-2 p-2 bg-green-300 rounded shadow-xl" src="insight.png" alt="insight" />
                     <p>Get insights on your debt, expenses, set goals, and increase your savings that leads to Investments.
                             Get started today with us for Free
                         </p>
