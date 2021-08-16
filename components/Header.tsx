@@ -7,7 +7,7 @@ export default function Header() {
     const [mobileMenu,setMobileMenu] = useState(false);
     return(
         <>
-            <nav className="relative z-10 max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+            <nav className="fixedd w-full mx-auto flex items-center justify-between px-4 lg:px-10 sm:px-6 pt-0 lg:pt-3 md:pt-3 shadow-2xl md:shadow-none" aria-label="Global">
 				<div className="flex items-center flex-1">
 					<div className="flex items-center justify-between w-full md:w-auto">
 						<a href="#">
@@ -15,7 +15,7 @@ export default function Header() {
 							<img className=" w-20 sm:h-14" src="/logo.png" alt="" />
 						</a>
 						<div className="-mr-2 flex items-center md:hidden">
-							<button onClick={()=>setMobileMenu(true)} type="button" className="bg-white shadow-lg mr-4 rounded-md p-3 inline-flex items-center justify-center text-gray-500 hover:text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500" aria-expanded="false">
+							<button onClick={()=>setMobileMenu(true)} type="button" className="bg-white  mr-4 rounded-md p-3 inline-flex items-center justify-center text-gray-500 hover:text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500" aria-expanded="false">
 								<span className="sr-only">Open main menu</span>
 								{/* Heroicon name: outline/menu */}
 								<svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">

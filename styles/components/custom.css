@@ -71,12 +71,12 @@
     left:0
 }
 .glass-two{
-   top: -3rem;
-   left:24rem
+   top: 0rem;
+   left:18rem
 }
 .glass-three{
-    top:16rem;
-    left:22rem
+    top:20rem;
+    left:16rem
     
 }
 /*Hero plus*/
@@ -162,6 +162,14 @@
         left:790px;
         z-index: 1;
     }
+    .shapeless{
+        border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
+    }
+    .fixedd {
+        position: fixed;;
+        top:0;
+        left:0;
+    }
     
 @media screen and (max-width: 1200px) {
     .hero-glass{
@@ -171,14 +179,14 @@
         left:0
     }
     .glass-two{
-        top:-4rem;
-       left:20rem
-    }
-    .glass-three{
-        top:14rem;
-        left:19rem
-        
-    }
+        top: 0rem;
+        left:12rem
+     }
+     .glass-three{
+         top:20rem;
+         left:14rem
+         
+     }
     .wave{
         top:-13rem;
     }
@@ -195,14 +203,14 @@
         left:0;
     }
     .glass-two{
-        top:0;
-       left:18rem
-    }
-    .glass-three{
-        top:14rem;
-        left:19rem
-        
-    }
+        top: 0rem;
+        left:12rem
+     }
+     .glass-three{
+         top:20rem;
+         left:14rem
+         
+     }
     .wave{
         top:-8rem;
     }
@@ -230,14 +238,14 @@
         left:2rem;
     }
     .glass-two{
-        top:0;
-       left:15rem
-    }
-    .glass-three{
-        top:18rem;
-        left:19rem
-        
-    }
+        top: 0rem;
+        left:12rem
+     }
+     .glass-three{
+         top:20rem;
+         left:14rem
+         
+     }
     .wave{
         top:-6rem;
     }

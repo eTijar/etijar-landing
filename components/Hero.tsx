@@ -18,12 +18,12 @@ export default function Hero() {
 			<div className="colors2"></div>
 			<div className="colors3"></div>
 			<div className="colors4"></div>
-			<motion.div className="relative pt-6 pb-16 sm:pb-24 lg:pb-24 heroo">
+			<motion.div className="relative pt-10 pb-16 sm:pb-24 lg:pb-24 heroo">
 
 				{/*******************Header**********************/}
 			<Header />
 			
-				<main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-24">
+				<main className=" w-full mt-16  px-4 sm:mt-24 px-4 lg:px-10 sm:px-6 lg:mt-24">
 					<div className="lg:grid lg:grid-cols-12 lg:gap-8">
 						<div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
 							<div className="">
@@ -41,7 +41,7 @@ export default function Hero() {
 								</div>
 								<div className="mt-7 sm:max-w-xl">
 									<motion.h1 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.4, ...transition}}} className="text-2xl font-bold text-gray-600 mb-4 tracking-tight sm:text-5xl hero-eti">eTijar</motion.h1>
-									<motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.6, ...transition}}} className="text-3xl font-bold text-blue-900 tracking-tight sm:text-6xl hero-eti">Make profit not Interest</motion.h2>
+									<motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.6, ...transition}}} className="text-3xl font-bold text-primary-300 tracking-tight sm:text-6xl hero-eti">Make profit not Interest</motion.h2>
 									<motion.p initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.8, ...transition}}} className="mt-5 text-base text-gray-500">Providing 100% ethical and interest-free. We are digitizing how you handle debt, save, invest and spend money.</motion.p>
 								</div>
 								<form action="#" className="mt-8 sm:max-w-lg sm:w-full sm:flex">
@@ -52,40 +52,12 @@ export default function Hero() {
 										<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
 									</div>
 									<div className="mt-4 sm:mt-0 sm:ml-3">
-										<button type="submit" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
+										<button type="submit" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow-lg bg-primary-300 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10">
 											Sign Up
 										</button>
 									</div>
 								</form>
-								<div className="mt-6">
-									<div className="inline-flex items-center divide-x divide-gray-300">
-										<div className="flex-shrink-0 flex pr-5">
-											{/* Heroicon name: solid/star */}
-											<svg className="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-												<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-											</svg>
-											{/* Heroicon name: solid/star */}
-											<svg className="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-												<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-											</svg>
-											{/* Heroicon name: solid/star */}
-											<svg className="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-												<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-											</svg>
-											{/* Heroicon name: solid/star */}
-											<svg className="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-												<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-											</svg>
-											{/* Heroicon name: solid/star */}
-											<svg className="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-												<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-											</svg>
-										</div>
-										<div className="min-w-0 flex-1 pl-5 py-1 text-sm text-gray-500 sm:py-3">
-											<span className="font-medium text-gray-900">Rated 5 stars</span> by over <span className="font-medium text-secondary-600">500 beta users</span>
-										</div>
-									</div>
-								</div>
+								
 							</div>{' '}
 						</div>
 						<div className="mt-10 p-6 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
@@ -93,27 +65,26 @@ export default function Hero() {
 									<motion.img style= {{scale:scale}} className="w-full rounded-lg" src = "/phoneMockup.png" alt="heroimg" />
 
 									
-							<motion.div initial={{scale:0.4}} animate={{scale:1}} transition={transition}  className="sm:block hidden absolute p-5 w-42 shadow-lg rounded flex items-center flex-col hero-glass glass-two">
-								<img className="w-10 bg-yellow-300 p-2 rounded-full" src= "/connection.svg" alt="con" />
+							<motion.div initial={{scale:0.4}} animate={{scale:1}} transition={transition}  className="sm:block hidden absolute p-3 w-72 border bg-white text-xs shadow-xl rounded-lg flex items-center flex-col glass-two">
+								<img className="w-8 bg-secondary-300 p-1 rounded-full" src= "/connection.svg" alt="con" />
 							<div className="">Use secure Banking links to connect your bank accounts and credit cards
 							to view all your transactions in one place</div> </motion.div>
-							<motion.div initial={{scale:0.4}} animate={{scale:1}} transition={transition} className="sm:block hidden absolute p-5 w-42 shadow-lg rounded flex items-center flex-col hero-glass glass-three">
-							<img className="w-10 bg-purple-300 p-2 rounded-full" src= "/stats.svg" alt="stats" />
-								<div className=""> Zero Interest, Transparent financing for 
-							small-businesses. Manage your business in one place </div></motion.div>
-							{/*for mobile*/}
+							<motion.div initial={{scale:0.4}} animate={{scale:1}} transition={transition} className="sm:block hidden absolute p-3 w-72 border bg-white text-xs shadow-xl rounded-lg flex items-center flex-col glass-three">
+							<img className="w-8 bg-secondary-300 p-1 rounded-full" src= "/target.svg" alt="target" />
+								<div className=""> Achieve your financial goals without compromise </div></motion.div>
+							                                   {/*********for mobile****************/}
 							<div className="relative w-full flex flex-col items-center p-12">
-							<div className="block sm:hidden bg-white hover:bg-yellow-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
-								<img className="w-10 bg-yellow-300 p-2 rounded-full shadow-lg" src= "/connection.svg" alt="con" />
+							<div className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
+								<img className="w-10 bg-secondary-300 p-2 rounded-full shadow-lg" src= "/connection.svg" alt="con" />
 							<div className="mt-5">Use secure Banking links to connect your bank accounts and credit cards
 							to view all your transactions in one place</div> </div>
-							<div className="block sm:hidden bg-white hover:bg-purple-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
-							<img className="w-10 bg-purple-300 p-2 rounded-full shadow-lg" src= "/stats.svg" alt="stats" />
+							<div className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
+							<img className="w-10 bg-secondary-300 p-2 rounded-full shadow-lg" src= "/target.svg" alt="target" />
+								<div className="mt-5">Achieve your financial goals without compromise </div></div>
+								<div className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
+							<img className="w-10 bg-secondary-300 p-2 rounded-full shadow-lg" src= "/stats.svg" alt="stats" />
 								<div className="mt-5"> Zero Interest, Transparent financing for 
 							small-businesses. Manage your business in one place </div></div>
-							<div className="block sm:hidden bg-white hover:bg-red-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
-							<img className="w-10 bg-red-300 p-2 rounded-full shadow-lg" src= "/target.svg" alt="target" />
-								<div className="mt-5">Achieve your financial goals without compromise </div></div>
 							</div>
 							
 							</div>
