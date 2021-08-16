@@ -7,7 +7,7 @@ export default function Header() {
     const [mobileMenu,setMobileMenu] = useState(false);
     return(
         <>
-            <nav className="fixedd w-full mx-auto flex items-center justify-between px-4 lg:px-10 sm:px-6 pt-0 lg:pt-3 md:pt-3 shadow-2xl md:shadow-none" aria-label="Global">
+            <nav className="fixed z-30 w-full mx-auto flex items-center justify-between px-4 lg:px-10 sm:px-6 left-0 top-0 pt-0 lg:pt-3 md:pt-3 shadow-2xl md:shadow-none" aria-label="Global">
 				<div className="flex items-center flex-1">
 					<div className="flex items-center justify-between w-full md:w-auto">
 						<a href="#">
@@ -56,8 +56,8 @@ export default function Header() {
 					</span>
 				</div>
 			</nav>
-            <Transition show={mobileMenu} enter="duration-150 ease-out" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="duration-100 ease-in" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95" className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-				<div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+            <Transition show={mobileMenu} enter="duration-150 ease-out" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="duration-100 ease-in" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95" className="absolute z-50 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+				<div className=" rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
 					<div className="px-5 pt-4 flex items-center justify-between">
 						<div>
 							<img className="h-20 sm:h-14" src="/logo.png" alt="" />

@@ -165,11 +165,6 @@
     .shapeless{
         border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
     }
-    .fixedd {
-        position: fixed;;
-        top:0;
-        left:0;
-    }
     
 @media screen and (max-width: 1200px) {
     .hero-glass{
