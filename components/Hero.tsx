@@ -13,6 +13,8 @@ export default function Hero() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 4])
 	return (
 		<motion.div exit={{opacity:0}} transition={{duration:1}} className="relative overflow-hidden max-h-auto mb-34">
+			{/*******************Header**********************/}
+			<Header />
 			{/*Glass color effects*/}
 			<div className="colors1"></div>
 			<div className="colors2"></div>
@@ -20,8 +22,7 @@ export default function Hero() {
 			<div className="colors4"></div>
 			<motion.div className="relative pt-10 pb-16 sm:pb-24 lg:pb-24 heroo">
 
-				{/*******************Header**********************/}
-			<Header />
+				
 			
 				<main className=" w-full mt-16  px-4 sm:mt-24 px-4 lg:px-10 sm:px-6 lg:mt-24">
 					<div className="lg:grid lg:grid-cols-12 lg:gap-8">

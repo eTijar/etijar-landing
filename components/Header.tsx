@@ -7,7 +7,7 @@ export default function Header() {
     const [mobileMenu,setMobileMenu] = useState(false);
     return(
         <>
-            <nav className="fixed z-30 w-full mx-auto flex items-center justify-between px-4 lg:px-10 sm:px-6 left-0 top-0 pt-0 lg:pt-3 md:pt-3 shadow-2xl md:shadow-none" aria-label="Global">
+            <nav className="fixed z-30 w-full mx-auto bg-white flex items-center justify-between px-4 lg:px-10 sm:px-6 left-0 top-0 pt-0 lg:pt-3 md:pt-3 shadow-2xl md:shadow-none" aria-label="Global">
 				<div className="flex items-center flex-1">
 					<div className="flex items-center justify-between w-full md:w-auto">
 						<a href="#">
