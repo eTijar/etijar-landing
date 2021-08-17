@@ -27,6 +27,7 @@ export default function MaxFooter() {
                     </p>
                     </div>
                 </div>
+                <div className="w-full flex justify-between flex-wrap">
                 <div className="flex flex-col justify-around items-center mt-10 w-52 mr-14">
                     <p className="font-bold text-gray-600 text-lg mb-4">Quick Links</p>
                     <a href="/about" className="mb-2 text-gray-600 hover:text-blue-600">About us</a>
@@ -42,6 +43,7 @@ export default function MaxFooter() {
                 <div className="w-52 mt-10">
                     <p className="font-bold text-gray-600 text-lg mb-4">Contact</p>
                     <p className="text-gray-600">Plot 203 IEC Crescent, off Oladipo Diya Street, Durumi 2, Abuja</p>
+                </div>
                 </div>
             </div>
             <footer className="bg-blue-900 py-4 text-blue-200 text-center">

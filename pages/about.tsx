@@ -135,9 +135,9 @@ export default function About() {
                         <div className="relative min-h-auto w-auto mb-32 mt-16 bg-white">
                 <div className="w-auto flex justify-center flex-wrap px-6">
                     <div className="w-full text-center mb-6 lg:mb-20">
-                    <h2 className="text-2xl md:text-5xl font-black text-secondary-300 text-shadow">Our Mission</h2>
+                    <h2 className="text-2xl md:text-5xl font-black text-secondary-300 text-shadow mb-6 lg:mb-0">Our Mission</h2>
                     </div>
-                    <div className=" w-full flex justify-between flex-wrap">
+                    <div className=" w-full flex lg:justify-between justify-center flex-wrap">
                         <div className=" relative w-3/4 lg:w-2/4 mb-20 lg:mb-2 bg-blue-50 shapeless rounded-sm py-5 px-8 text-sm text-gray-500 shadow-2xl">
                             <FaMoneyCheckAlt className=" text-4xl mb-2 text-secondary-300"/>
                         <h2 className="text-base text-primary-300 font-bold mb-3">Lower the costs and barriers of financing and investing for everyday people</h2>
@@ -152,7 +152,7 @@ export default function About() {
                         n your risk profile using the Modern Portfolio Theory the halal way. Our technology simplifies the entire investing experience and provides you with the best possible return. Invest with eTijar: save on time, effort & money. Stay halal
                         </div>
                         </div>
-                        <div className="w-full flex justify-between flex-wrap mt-24">
+                        <div className="w-full flex lg:justify-between justify-center flex-wrap mt-24">
                         <div className="relative w-3/4 lg:w-2/4 mb-2 lg:mb-2 bg-white rounded-sm py-5 px-8 text-sm text-gray-500">
                         <FaExchangeAlt className=" text-4xl mb-2 text-secondary-300"/>
                         <h2 className="text-base text-primary-300 font-bold mb-3">An ethical non-interest Investment and finance platform for all, anywhere in the world</h2>
@@ -175,8 +175,8 @@ export default function About() {
                      d="M0,160L80,138.7C160,117,320,75,480,90.7C640,107,800,181,960,197.3C1120,213,1280,171,1360,149.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
                    <div className="relative min-h-auto w-auto -mt-36 py-6  bg-primary-300 flex justify-around items-center flex-wrap">
                     <img className="w-4/6 lg:w-2/6" src="time.png" alt="time" />
-                <div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
-                <p className="mt-5 lg:mt-10 text-2xl lg:text-3xl sm:text-3xl text-gray-100">Stay organized, Save time and money with handy tools that keep your financial life organized.</p>
+                <div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap px-10">
+                <p className="mt-5 lg:mt-10 mb-4 text-2xl lg:text-3xl sm:text-3xl text-gray-100">Stay organized, Save time and money with handy tools that keep your financial life organized.</p>
                 <form action="#" className="mt-5 sm:max-w-lg sm:w-full w-3/4 sm:flex">
 									<div className="min-w-0 flex-1">
 										<label htmlFor="hero_email" className="sr-only">
