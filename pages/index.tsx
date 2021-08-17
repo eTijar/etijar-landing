@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import FAQs from '../components/faqs'
 import Hero from '../components/Hero'
 import HeroPlus from '../components/HeroPlus'
 import MaxFooter from '../components/MaxFooter'
