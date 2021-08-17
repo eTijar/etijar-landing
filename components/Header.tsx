@@ -1,13 +1,29 @@
 import Link from "next/link"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {Transition} from "@headlessui/react";
 import Image from 'next/image';
+import { motion } from 'framer-motion'
 
 export default function Header() {
     const [mobileMenu,setMobileMenu] = useState(false);
-    return(
+	const [state, setState] = useState({show:true, scrollp:0}); 
+	const [navb, setNavb] = useState(false);
+
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+
+	}, [navb]);
+
+	const handleScroll = () => {
+		if(window.scrollY >= 60) {
+			setNavb(true)
+		} else {
+			setNavb(false)
+		}
+	}
+	return(
         <>
-            <nav className="fixed z-30 w-full mx-auto bg-white flex items-center justify-between px-4 lg:px-10 sm:px-6 left-0 top-0 pt-0 lg:pt-3 md:pt-3 shadow-2xl md:shadow-none" aria-label="Global">
+            <motion.nav className="{navb ? 'active' : 'hidden'} fixed z-30 w-full mx-auto bg-white flex items-center justify-between px-4 lg:px-10 sm:px-6 left-0 top-0 pt-0 lg:pt-3 md:pt-3 shadow-2xl md:shadow-none" aria-label="Global">
 				<div className="flex items-center flex-1">
 					<div className="flex items-center justify-between w-full md:w-auto">
 						<a href="#">
@@ -55,7 +71,7 @@ export default function Header() {
 						</a>
 					</span>
 				</div>
-			</nav>
+			</motion.nav>
             <Transition show={mobileMenu} enter="duration-150 ease-out" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="duration-100 ease-in" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95" className="absolute z-50 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
 				<div className=" rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
 					<div className="px-5 pt-4 flex items-center justify-between">

@@ -2,137 +2,136 @@ import Head from 'next/head';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
+import {motion, AnimatePresence, useTransform, useViewportScroll} from 'framer-motion'
+import Header from '../components/Header'
+import MaxFooter from '../components/MaxFooter'
+
+const transition = { duration:1, ease: [0.43, 0.13, 0.23, 0.96] }
+
 export default function Product() {
 	const [mobileMenu, setMobileMenu] = useState(false);
+	const {scrollYProgress} = useViewportScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 4])
 	return (
 		<>
 			<Head>
 				<title>eTijar - Product Page</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div className="relative bg-white overflow-hidden pt-6 pb-16 sm:pb-24 lg:pb-32">
-				<nav className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
-					<div className="flex items-center flex-1">
-						<div className="flex items-center justify-between w-full md:w-auto">
-							<a href="#">
-								<span className="sr-only">Etijar</span>
-								<img className="h-8 w-auto sm:h-14" src="/etijar-logo.svg" alt="" />
-							</a>
-							<div className="-mr-2 flex items-center md:hidden">
-								<button onClick={()=>setMobileMenu(true)} type="button" className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500" aria-expanded="false">
-									<span className="sr-only">Open main menu</span>
-									{/* Heroicon name: outline/menu */}
-									<svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-									</svg>
-								</button>
-							</div>
-						</div>
-						<div className="hidden md:block md:ml-10 md:space-x-10">
-							<Link href="/" passHref>
-								<a className="font-medium text-gray-500 hover:text-gray-900">Home</a>
-							</Link>
-							<Link href="/#features" passHref>
-								<a className="font-medium text-gray-500 hover:text-gray-900">Features</a>
-							</Link>
-							<Link href="/product" passHref>
-								<a className="font-medium text-gray-500 hover:text-gray-900">Product</a>
-							</Link>
-							<Link href="/contact" passHref>
-								<a className="font-medium text-gray-500 hover:text-gray-900">Contact Us</a>
-							</Link>
-						</div>
-					</div>
-					<div className="hidden md:block text-right">
-						<span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-							<a href="#" className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-secondary-600 bg-white hover:bg-gray-50">
-								Log in
-							</a>
+			<Header />
+			<motion.div className="relative overflow-hidden pt-10 pb-16 sm:pb-2 lg:pb-5 heroo">
+			
+				
+<main className=" w-full mt-16  px-4 sm:mt-24 px-4 lg:px-10 sm:px-6 lg:mt-24">
+	
+	<div className="lg:grid lg:grid-cols-12 lg:gap-8">
+		
+		<div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+			<div className="">
+				<div>
+					<a href="#" className="inline-flex space-x-4">
+						<span className="rounded bg-yellow-100 px-2.5 py-1 text-xs font-semibold text-yellow-700 tracking-wide uppercase">What's new</span>
+						<span className="inline-flex items-center text-sm font-medium text-secondary-600 space-x-1">
+							<span>Introducing</span>
+							{/* Heroicon name: solid/chevron-right */}
+							<svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+								<path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+							</svg>
 						</span>
-					</div>
-				</nav>
-				<Transition show={mobileMenu} enter="duration-150 ease-out" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="duration-100 ease-in" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95" className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-					<div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-						<div className="px-5 pt-4 flex items-center justify-between">
-							<div>
-								<img className="h-8 w-auto" src="/etijar-logo.svg" alt="" />
-							</div>
-							<div className="-mr-2">
-								<button onClick={()=>setMobileMenu(false)} type="button" className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500">
-									<span className="sr-only">Close main menu</span>
-									{/* Heroicon name: outline/x */}
-									<svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-									</svg>
-								</button>
-							</div>
-						</div>
-						<div className="px-2 pt-2 pb-3 space-y-1">
-							<Link href="/" passHref>
-								<a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-									Home
-								</a>
-							</Link>
-							<Link href="/#features" passHref>
-								<a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-									Features
-								</a>
-							</Link>
-							<Link href="/product" passHref>
-								<a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-									Product
-								</a>
-							</Link>
-
-							<Link href="/contact" passHref>
-								<a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-									Contact Us
-								</a>
-							</Link>
-						</div>
-						<a href="#" className="block w-full px-5 py-3 text-center font-medium text-secondary-600 bg-gray-50 hover:bg-gray-100">
-							Log in
-						</a>
-					</div>
-				</Transition>
-
-				<div className="px-4 sm:px-6 lg:px-8 mt-20">
-					<div className="text-lg max-w-prose mx-auto">
-						<h1>
-							<span className="block text-base text-center text-secondary-600 font-semibold tracking-wide uppercase">Introducing</span>
-							<span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">eTijar - Earn Profit, Not Interest</span>
-						</h1>
-						<p className="mt-8 text-xl text-gray-500 leading-8">
-							eTijar is a fully ethical finance and wealth management platform. We provide you with expense management, multi-currency wallets, access to investments, portfolio management, donations management, zakat payments and savings by investing. We are fully Halal compliant.
-						</p>
-					</div>
-					<div className="mt-6 prose prose-secondary prose-lg text-gray-500 mx-auto">
-						<h2>An ethical non-interest Investment and finance platform for all, anywhere in the world</h2>
-						<p>A multi-currency e-wallet that allows you to get Mudarabah financing, virtual debit cards, personal/business bill payments and acceptance.</p>
-						<p>eTijar helps you to exchange, spend and send money at the best possible rates. Build an asset portfolio for your future income with selected shariah-compliant equities and index funds.</p>
-						<h2>eTijar Halal Investment</h2>
-						<p>
-							eTijar helps you invest in a shariah acceptable way, in fully-diversified portfolios of low-cost Halal index funds, equities and alternative investments, based on your risk profile using the Modern Portfolio Theory the halal way. Our technology simplifies the entire investing
-							experience and provides you with the best possible return. Invest with eTijar: save on time, effort & money. Stay halal.
-						</p>
-						<h2>Zero Interest, Transparent financing for Small-businesses.</h2>
-						<p>eTijar helps you build your small business and grow through ethical and shariah business rules.</p>
-						<p>Making banking more useful for fast-growing businesses, the Interest-free way.</p>
-						<p>We seek to make it easy for SMEs, entrepreneurs and freelancers to have affordable business banking services.</p>
-						<p>Starting and running a business in Nigeria is hard. It can be less so. We believe banking can act as support for entrepreneurs everywhere and not a burden.</p>
-						<figure>
-							<img className="w-full rounded-lg" src="https://images.unsplash.com/photo-1554058922-d51b58b707f5?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3" alt="" width={1310} height={873} />
-							<figcaption>Sagittis scelerisque nulla cursus in enim consectetur quam.</figcaption>
-						</figure>
-						<h2>Shariah Compliant Portfolio Investments</h2>
-						<p>Invest in shariah acceptable equities and fully-diversified portfolios of low-cost Halal index funds.</p>
-						<p>We follow established Shariah screening criteria set up by our Shariah Advisory Board.</p>
-						<p>Our Shariah Equity Screening Solution enables individuals’ access to a pre-screened universe of Shariah-compliant stocks.</p>
-						<p>Our system and technology can classify equities as Shariah-compliant based on many criteria set by our Shariah committee.</p>
-						<p>Our dynamic Shariah audit tool helps Shariah funds remain in continuous Shariah compliance by generating precise Shariah Compliance audit reports at the desired frequencies.</p>
-					</div>
+					</a>
 				</div>
+				<div className="mt-7 sm:max-w-xl">
+					<motion.h1 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.4, ...transition}}} className="text-2xl font-bold text-gray-600 mb-4 tracking-tight sm:text-5xl hero-eti text-shadow">eTijar</motion.h1>
+					<motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.6, ...transition}}} className="text-3xl font-bold text-primary-300 tracking-tight sm:text-6xl hero-eti text-shadow">Make profit not Interest !</motion.h2>
+					<motion.p initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.8, ...transition}}} className="mt-5 text-base text-gray-500">eTijar is a fully ethical finance and wealth management platform. We provide you with expense
+					 management, multi-currency wallets, access to investments, portfolio management, donations management, zakat payments and savings by investing. We are fully Halal compliant.</motion.p>
+				</div>
+				<motion.form initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.4, ...transition}}} action="#" className="mt-8 sm:max-w-lg sm:w-full sm:flex">
+					<div className="min-w-0 flex-1">
+						<label htmlFor="hero_email" className="sr-only">
+							Email address
+						</label>
+						<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
+					</div>
+					<div className="mt-4 sm:mt-0 sm:ml-3">
+						<button type="submit" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow-lg bg-primary-300 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10">
+							Sign Up
+						</button>
+					</div>
+				</motion.form>
+				
+			</div>{' '}
+		</div>
+		<div className="mt-10 p-6 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+			
+					<motion.img style= {{scale:scale}} className="w-full rounded-lg" src = "/productMockup.png" alt="productMockup" />
+			
 			</div>
+	</div>
+</main>
+</motion.div>
+<div className="relative min-h-auto w-auto mb-32 mt-16 bg-white">
+                <div className="w-auto flex justify-center flex-wrap px-10">
+                    <div className="w-full text-center mb-10 lg:mb-20">
+                    <h2 className="text-3xl md:text-6xl font-black text-secondary-300 text-shadow">What we offer</h2>
+                    </div>
+                    <div className=" w-full flex lg:justify-between justify-center flex-wrap flex-row-reverse lg:flex-row mb-24">
+                        <div className=" relative w-4/4 lg:w-3/4 bg-primary-300 py-5 px-8 text-gray-300">
+							<p className="text-lg font-bold mb-3">An ethical non-interest Investment and finance platform for all, anywhere in the world</p>
+							<p className="text-base">A multi-currency e-wallet that allows you to get Mudarabah financing, virtual debit cards, personal/business bill payments and acceptance.
+									eTijar helps you to exchange, spend and send money at the best possible rates. 
+									Build an asset portfolio for your future income with selected shariah-compliant equities and index funds.</p>
+                        </div>
+                        <div className="relative w-4/4 lg:w-1/4 md:w-2/4 mb-20 lg:mb-2 bg-white py-5 px-8">
+							<img className="w-full p-3 bg-gray-100 shadow-2xl" src ="proOne.png" alt="proOne" />
+                        
+                        </div>
+                        </div>
+						<div className=" w-full flex lg:justify-between justify-center flex-wrap flex-row-reverse mb-24">
+                        <div className="relative w-4/4 lg:w-3/4 bg-primary-300 py-5 px-8 text-gray-300">
+                            <p className="text-lg font-bold mb-3">eTijar Halal Investment</p>
+							<p className="text-base">eTijar helps you invest in a shariah acceptable way, in fully-diversified portfolios of low-cost Halal index funds, equities and alternative investments, based on your risk profile using the Modern Portfolio Theory the halal way. Our technology simplifies the entire investing
+							experience and provides you with the best possible return. Invest with eTijar: save on time, effort & money. Stay halal.</p>
+                          
+                        </div>
+                        <div className="relative w-4/4 lg:w-1/4 md:w-2/4 mb-20 lg:mb-2 bg-white py-5 px-8">
+							<img className="w-full p-3 bg-gray-100 shadow-2xl" src ="proTwo.png" alt="proTwo" />
+                        
+                        </div>
+                        </div>
+						<div className=" w-full flex lg:justify-between justify-center flex-wrap mb-24">
+                        <div className="relative w-4/4 lg:w-3/4 bg-primary-300 py-5 px-8 text-gray-300">
+                            <p className="text-lg font-bold mb-3">Zero Interest, Transparent financing for Small-businesses.</p>
+							<p className="text-base">eTijar helps you build your small business and grow through ethical and shariah business rules.
+						Making banking more useful for fast-growing businesses, the Interest-free way.
+						We seek to make it easy for SMEs, entrepreneurs and freelancers to have affordable business banking services.
+						Starting and running a business in Nigeria is hard. It can be less so. We believe banking can act as support for entrepreneurs everywhere and not a burden.</p>
+                          
+                        </div>
+                        <div className="relative w-4/4 lg:w-1/4 md:w-2/4 mb-20 lg:mb-2 bg-white py-5 px-8">
+							<img className="w-full p-3 bg-gray-100 shadow-2xl" src ="proThree.png" alt="proThree" />
+                        
+                        </div>
+                        </div>
+						<div className=" w-full flex lg:justify-between justify-center flex-wrap flex-row-reverse mb-24">
+                        <div className="relative w-4/4 lg:w-3/4 bg-primary-300 py-5 px-8 text-gray-300">
+                            <p className="text-lg font-bold mb-3">Shariah Compliant Portfolio Investments</p>
+							<p className="text-base">Invest in shariah acceptable equities and fully-diversified portfolios of low-cost Halal index funds.
+						We follow established Shariah screening criteria set up by our Shariah Advisory Board.
+						Our Shariah Equity Screening Solution enables individuals’ access to a pre-screened universe of Shariah-compliant stocks.
+						Our system and technology can classify equities as Shariah-compliant based on many criteria set by our Shariah committee.
+						Our dynamic Shariah audit tool helps Shariah funds remain in continuous Shariah compliance by generating precise Shariah Compliance audit reports at the desired frequencies.</p>
+                          
+                        </div>
+                        <div className="relative w-4/4 lg:w-1/4 md:w-2/4 mb-20 lg:mb-2 bg-white py-5 px-8">
+							<img className="w-full p-3 bg-gray-100 shadow-2xl" src ="proFour.png" alt="proFour" />
+                        
+                        </div>
+                        </div>
+
+                </div>
+            </div>
+			<MaxFooter/>	
 		</>
 	);
 }

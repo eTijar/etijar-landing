@@ -130,6 +130,7 @@
     left:-60px;
     top:60px;
     }
+    
     .foot{
         position: absolute;
         width:220px;
@@ -165,7 +166,68 @@
     .shapeless{
         border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
     }
-    
+    .text-shadow{
+        text-shadow: 0 20px 30px rgba(0,0,0,.2);
+    }
+    .nav.active{
+        background-color: green;
+        visibility:visible;
+    }
+    .nav.hidden{
+        background-color: purple;
+        visibility: hidden;
+    }
+    .hideContent{
+        display:none;
+        height:0;
+        transform: all .5s;
+    }
+    .showContent{
+        display: block;
+        height:auto;
+        transform: all .5s
+
+    }
+    .contact:before{
+        content:'';
+        position: absolute;
+        width: 55%;
+        right:0;
+        top:0;
+        height:100vh;
+        background-color: #083170;
+    }
+    .conImg:before{
+        content:'';
+        position:absolute;
+        width:220px;
+        height:220px;
+        background-color: #083170;
+        border-radius: 65% 35% 42% 58% / 52% 33% 67% 48%;
+        bottom:-5rem;
+        left:-5rem;
+    }
+    .conImg:after{
+        content:'';
+        position:absolute;
+        width:150px;
+        height:150px;
+        background-color: #f28705;
+        border-radius:50%;
+        top:-3rem;
+        left:-3rem;
+    }
+    .conImg2:before{
+        content:'';
+        position:absolute;
+        width:220px;
+        height:220px;
+        background-color: #1E40AF
+        ;
+        border-radius: 65% 35% 42% 58% / 52% 33% 67% 48%;
+        top:-8rem;
+        right:-8rem;
+    }
 @media screen and (max-width: 1200px) {
     .hero-glass{
         font-size: 12px;
@@ -226,7 +288,18 @@
         left:390px;
         top:60px;
     }
+    .conImg2:before{
+        display: none;
+    }
+    .conImg:before{
+        display: none;
+    }
     
+}
+@media screen and (max-width: 768px) {
+    .contact:before{
+        display: none;
+    }
 }
 @media screen and (max-width: 600px) {
     .glass-one{

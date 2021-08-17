@@ -29,7 +29,7 @@ export default function MaxFooter() {
                 </div>
                 <div className="flex flex-col justify-around items-center mt-10 w-52 mr-14">
                     <p className="font-bold text-gray-600 text-lg mb-4">Quick Links</p>
-                    <a href="" className="mb-2 text-gray-600 hover:text-blue-600">About us</a>
+                    <a href="/about" className="mb-2 text-gray-600 hover:text-blue-600">About us</a>
                     <a href="" className="mb-2 text-gray-600 hover:text-blue-600">FAQs</a>
                     <a href="" className="mb-2 text-gray-600 hover:text-blue-600">Meet our Team</a>
                     <a href="" className="mb-2 text-gray-600 hover:text-blue-600">Terms and condition</a>

@@ -1,9 +1,13 @@
 import Link from "next/link"
 import { motion, AnimatePresence, useTransform, useViewportScroll } from 'framer-motion'
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import FAQs from '../components/faqs'
+import {useState} from 'react'
+
 export default function HeroPlus() {
     const {scrollYProgress} = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.04])
+  const [active, setActive] = useState("false");
 	return (
         <>
         
@@ -145,15 +149,28 @@ export default function HeroPlus() {
             <div className="relative min-h-auto w-auto pb-4  px-3 lg:px-0 lg:mx-32 md:mx-16 mx-10 flex justify-around items-start flex-wrap">
             <img className="w-4/6 lg:w-2/6" src="faq.png" alt="faq" />
                 <div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
-                <p className="mt-5 lg:mt-32 text-base lg:text-lg text-gray-700"> You still have plenty of questions to ask? Do not worry, our FAQ have got you covered.
-                Head to our <a href="" className="text-green-600">Frequently Asked Question</a> page to know more <br/><br/>
-                <a href="#" className=" rounded-md border border-transparent bg-primary-300  px-5 py-3 text-base font-medium text-white shadow hover:bg-blue-500 bg-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 hero-btn">
-											Go!
-										</a></p>
+                <p className="mt-5 lg:mt-32 text-lg lg:text-xl text-gray-700"> You still have plenty of questions to ask?
+                Checkout our <span className="text-green-600">Frequently Asked Question</span>
+               </p>                      
 			
             </div>
-           
+            {/******************************frequently asked questions component************************/}
+                    <FAQs active={active} setActive={setActive} id="fone" accTitle = "What is a Shariah-compliant fund?" accContent="The most common forms of Shariah-compliant investment funds are equity
+									funds, real estate funds and money market funds. These investment funds employ Islamic contracts which ensure that the terms and rights of all parties are safeguarded in conformity with Islamic principles."/>
+                    <FAQs active={active} setActive={setActive} id="ftwo" accTitle="What are the main principles of Islamic finance?" accContent="Two fundamental principles of Islamic banking are the sharing of profit and loss, and the prohibition of the collection and payment of interest by lenders and investors. There are more than 300 banks and 250 mutual funds around the world that comply with Islamic principles." />
+                    <FAQs active={active} setActive={setActive} id="fthree" accTitle="What are the major modes of Islamic financing?" accContent="Some of the modes of Islamic banking/finance include Mudarabah (profit-sharing and loss-bearing), Wadiah (safekeeping), Musharaka joint venture, Murabaha (cost-plus), and Ijara (leasing). The Qur'an prohibits riba, which means increase" />
+                    <FAQs active={active} setActive={setActive} id="ffour" accTitle="How do you make money if interest is prohibited?" accContent=">Islamic financiers operate without interest, which is not permitted in Islam. Instead, money is generated through profit from investments. Each Islamic finance or investment firm has a panel of Muslim advisers who ensure that these investments are compliant with Sharia law." />
+                    <FAQs active={active} setActive={setActive} id="ffive" accTitle="Why is Shariah compliance important?" accContent="Reputational risk is particularly damaging for shariah-compliant entities especially the banks since the nature of their business requires them to maintain the confidence of the depositors, creditors, and the general marketplace. Thus, the compliance issue is one of the most crucial factors in determining smooth and successful banking operations." />
+                    <FAQs active={active} setActive={setActive} id="fsix" accTitle="Can finance be Islamic?" accContent="Islamic finance refers to how businesses and individuals raise capital in accordance with Sharia, or Islamic law. It also refers to the types of investments that are permissible under this form of law. Islamic finance can be seen as a unique form of socially responsible investment." />
+                    <FAQs active={active} setActive={setActive} id="fseven" accTitle="Encouraging stability in investments" accContent="Companies whose financial practices and operations are too risky are usually kept away by Islamic financing companies. By performing intensive audits and analyses, Islamic finance promotes the reduction of risk and creates space for greater investment stability." />
 
+                    <p className="mt-4 text-lg text-gray-500">
+							Can’t find the answer you’re looking for? Reach out to our{' '}
+							<a href="#" className="font-medium text-primary-600 hover:text-primary-500">
+								customer support
+							</a>{' '}
+							team.
+						</p>
             </div>
         </>
     );

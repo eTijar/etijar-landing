@@ -41,8 +41,8 @@ export default function Hero() {
 									</a>
 								</div>
 								<div className="mt-7 sm:max-w-xl">
-									<motion.h1 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.4, ...transition}}} className="text-2xl font-bold text-gray-600 mb-4 tracking-tight sm:text-5xl hero-eti">eTijar</motion.h1>
-									<motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.6, ...transition}}} className="text-3xl font-bold text-primary-300 tracking-tight sm:text-6xl hero-eti">Make profit not Interest</motion.h2>
+									<motion.h1 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.4, ...transition}}} className="text-2xl font-bold text-gray-600 mb-4 tracking-tight sm:text-5xl hero-eti text-shadow">eTijar</motion.h1>
+									<motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.6, ...transition}}} className="text-3xl font-bold text-primary-300 tracking-tight sm:text-6xl hero-eti text-shadow">Make profit not Interest</motion.h2>
 									<motion.p initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.8, ...transition}}} className="mt-5 text-base text-gray-500">Providing 100% ethical and interest-free. We are digitizing how you handle debt, save, invest and spend money.</motion.p>
 								</div>
 								<form action="#" className="mt-8 sm:max-w-lg sm:w-full sm:flex">
