@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { motion, AnimatePresence, useTransform, useViewportScroll } from 'framer-motion'
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
-import FAQs from './faqs'
+import FAQs from './Faqs'
 import {useState} from 'react'
 
 export default function HeroPlus() {
