@@ -8,22 +8,29 @@ export default function Header() {
     const [mobileMenu,setMobileMenu] = useState(false);
 	const [state, setState] = useState({show:true, scrollp:0}); 
 	const [navb, setNavb] = useState(false);
-
+	
 	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
+		window.addEventListener('scroll', () => {
+			if(window.scrollY >= 40) {
+				setNavb(true)
+			}else {
+				setNavb(false)
+			}
+		});
+		return window.removeEventListener('scroll', () => {
+			if(window.scrollY >= 40) {
+				setNavb(true)
+			}else {
+				setNavb(false)
+			}
+		});
+	}, [setNavb]);
 
-	}, [navb]);
+		
 
-	const handleScroll = () => {
-		if(window.scrollY >= 60) {
-			setNavb(true)
-		} else {
-			setNavb(false)
-		}
-	}
-	return(
+return(
         <>
-            <motion.nav className="{navb ? 'active' : 'hidden'} fixed z-30 w-full mx-auto bg-white flex items-center justify-between px-4 lg:px-10 sm:px-6 left-0 top-0 pt-0 lg:pt-3 md:pt-3 shadow-2xl md:shadow-none" aria-label="Global">
+            <motion.nav className={navb ? 'navbar active' : 'navbar'}aria-label="Global">
 				<div className="flex items-center flex-1">
 					<div className="flex items-center justify-between w-full md:w-auto">
 						<a href="#">
