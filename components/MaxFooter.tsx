@@ -18,12 +18,8 @@ export default function MaxFooter() {
                 </div>
                 </div>
                 <div className="mt-6 px-4 mb-16">
-                    <p className="text-gray-600 text-base">At eTijar, we want to lead and drive financial independence and inclusion of Muslims across the greater
-                        African region. Money is a medium of social exchange. We are building the fabric to connect every member 
-                        of this society, from individuals to small business owners to freelancers and beyond. Our human-first and
-                         customer-centric approach will make the difference. A digital wallet to help Muslims handle debt, save, invest,
-                          and spend money. With our app you can save and invest according to the tenets of shariah, you can pay out 
-                        Zakat (personal income tax) and create a Will (Wassiyat).
+                    <p className="text-gray-600 text-base">eTijar.com is a property of eTijar Financial Technologies Limited, a company duly registered with the Corporate Affairs Commission of Nigeria. eTijar.com provides financial services in partnership with financial providers. All banking services and account numbers are provided by Sterling Bank Plc, regulated by the Central Bank of Nigeria, all funds are kept and managed by SEC licensed fund managers and Trustees. 
+Please note the indicative rate of return shall not be guaranteed and past performance does not guarantee future investment performance. The indicative rate of return is not fixed and may, as such, vary from time to time depending on the investment period and prevailing economic, political or social circumstances.
                     </p>
                     </div>
                 </div>

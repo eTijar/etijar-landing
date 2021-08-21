@@ -21,7 +21,7 @@ export default function FAQs({ accTitle, accContent, id, active, setActive }:Com
 								+
 							</div>
 						</div>
-						<div className="bg-white shadow-2xl rounded pt-5 pb-10 px-4 text-base text-gray-600 ">{accContent}</div>
+						<div className={`${active ? " " : "hide"} bg-white shadow-2xl rounded pt-5 pb-10 px-4 text-base text-gray-600` }>{accContent}</div>
 					</div>
 				</div>
 			</div>

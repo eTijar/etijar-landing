@@ -56,14 +56,7 @@ return(
 							About
 						</a>
                         </Link>
-						<Link href="/features" passHref><a className="font-medium text-gray-500 hover:text-gray-900">
-							Features
-						</a>
-                        </Link>
-						<Link href="/product" passHref><a  className="font-medium text-gray-500 hover:text-gray-900">
-							Product
-						</a>
-                        </Link>
+						
                         <Link href="/contact" passHref>
                         <a  className="font-medium text-gray-500 hover:text-gray-900">
 							Contact Us
@@ -102,18 +95,12 @@ return(
 						<Link href="/about" passHref><a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
 							About
 						</a></Link>
-						<Link href="/features" passHref><a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-							Features
-						</a></Link>
-						<Link href="/product" passHref><a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-							Product
-						</a></Link>
 
                         <Link href="/contact" passHref><a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
 							Contact Us
 						</a></Link>
 					</div>
-					<a href="#" className="block w-full px-5 py-3 text-center font-medium text-secondary-600 bg-gray-50 hover:bg-gray-100">
+					<a href="https://app.etijar.com/login" target="_blank" className="block w-full px-5 py-3 text-center font-medium text-secondary-600 bg-gray-50 hover:bg-gray-100">
 						Log in
 					</a>
 				</div>

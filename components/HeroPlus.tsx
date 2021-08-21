@@ -62,9 +62,9 @@ export default function HeroPlus() {
 								<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
 							</div>
 							<div className="mt-4 sm:mt-0 sm:ml-3">
-								<button type="submit" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
+								<a href ="https://app.etijar.com" target="_blank" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
 									Sign Up
-								</button>
+								</a>
 							</div>
 						</form>
 					</div>
@@ -86,17 +86,7 @@ export default function HeroPlus() {
 				</div>
 			</div>
 
-			<div className="relative min-h-auto w-auto py-24 md:py-16 px-9 lg:px-0 mx-6 lg:mx-10 bg-white flex justify-around items-center flex-wrap flex-row-reverse">
-				<img className="w-4/6 lg:w-2/6" src="islamic.png" alt="islamic" />
-				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
-					<h2 className="mt-5 lg:mt-10 md:text-lg lg:text-xl text-base text-gray-500">Achieve your financial goals by investing in Islamic Investments.</h2>
-					<div className="mt-6 sm:mt-3 ">
-						<a href="" className="block w-full rounded-md border border-transparent px-2 py-2 text-base font-medium text-white shadow bg-red-400 hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
-							Get started
-						</a>
-					</div>
-				</div>
-			</div>
+			
 			<div className="relative min-h-auto w-auto mb-32 mt-16 bg-white">
 				<div className="w-auto flex justify-center flex-wrap px-8 md:px-20">
 					<div className="w-full text-center mb-6 lg:mb-20">
@@ -139,7 +129,7 @@ export default function HeroPlus() {
 							<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
 						</div>
 						<div className="mt-4 sm:mt-0 sm:ml-3">
-							<a href="" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow bg-secondary-300 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
+							<a href="https://app.etijar.com" target="_blank" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow bg-secondary-300 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
 								Get started
 							</a>
 						</div>
@@ -158,10 +148,10 @@ export default function HeroPlus() {
 								<img className="md:w-3/4 w-full h-auto p-3 bg-primary-300 shadow-2xl lg:mb-3 shapeless" src="legal-document.png" alt="legal-document" />
 							</div>
 							<div className="w-full lg:w-1/2 mb-10 lg:mb-2 mt-8 lg:mt-8 rounded-sm p-5 bg-white">
-								<h2 className="text-xl md:text-2xl text-primary-300 font-bold mb-3">
+								<h2 className="text-xl md:text-2xl text-primary-300 font-bold mb-3 text-center">
 									WASSIYAT <span className="text-gray-400 text-3xl md:text-5xl ml-2">وصیت</span>
 								</h2>
-								<p className="text-base text-gray-500">
+								<p className="text-base text-gray-500 text-center">
 									Many people leave their estates to guesses and squabbles, a lot of assets never get found or known about, even more creating an estate plan in compliance with Islamic rules of inheritance is a practice abandoned. Wassiyat changes everything. Now you can create legal documents that
 									comply with Islamic rules in minutes, at a very low cost, and in the comfort and privacy of your own home. We can further get it notarized if you desire. We keep simple so reviews are easy and quick.
 								</p>
@@ -174,10 +164,10 @@ export default function HeroPlus() {
 								<img className="md:w-3/4 w-full p-3 bg-primary-300 shadow-2xl shapeless h-auto ml-0 lg:ml-8" src="zakat.png" alt="zakat" />
 							</div>
 							<div className="w-full lg:w-1/2 mb-10 lg:mb-2 mt-8 lg:mt-8 rounded-sm p-5 bg-white">
-								<h2 className="text-xl md:text-2xl text-primary-300 font-bold mb-3">
+								<h2 className="text-xl md:text-2xl text-primary-300 font-bold mb-3 text-center">
 									ZAKAT <span className="text-gray-400 text-3xl md:text-5xl ml-2">الزكاة</span>
 								</h2>
-								<p className="text-base text-gray-500">
+								<p className="text-base text-gray-500 text-center">
 									Zakat is obligatory on all Muslims who are in possession of surplus wealth for a full lunar year, exceeding the monetary value of 85 grams of gold (7.5 Tola), we will help you calculate it either by your manual input or as an automated action from your eTijar account. eTijar will
 									help you with deduction and payout to vetted charities, zakat funds, and individuals of your choice.
 								</p>

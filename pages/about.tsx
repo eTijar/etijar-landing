@@ -72,8 +72,8 @@ export default function About() {
                     </motion.div>
                 </motion.div>
                 <motion.div initial={{y:'-20%', width:imageSize.width, height:imageSize.height,}} 
-                 animate={{y:'-10%', width:'100%', height: '500px', transition: {delay: .2, ...transition}}} className="relative">
-                <img className="relative w-full h-full my-16" src = "HeroImage.png" alt="about"/>
+                 animate={{y:'-10%', width:'100%', height: '500px', transition: {delay: .2, ...transition}}} className="relative flex justify-center">
+                <img className="relative lg:w-3/4 md:w-2/4 w-full lg:h-90 h-full my-16" src = "about.png" alt="about"/>
                 </motion.div>
                 
                 </div>
@@ -176,7 +176,8 @@ export default function About() {
                    <div className="relative min-h-auto w-auto -mt-36 py-6  bg-primary-300 flex justify-around items-center flex-wrap">
                     <img className="w-4/6 lg:w-2/6" src="time.png" alt="time" />
                 <div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap px-10">
-                <p className="mt-5 lg:mt-10 mb-4 text-2xl lg:text-3xl sm:text-3xl text-gray-100">Stay organized, Save time and money with handy tools that keep your financial life organized.</p>
+                <p className="mt-5 lg:mt-4 mb-5 text-lg lg:text-2xl sm:text-xl text-gray-100">Stay organized, Save time and money with handy tools that keep your financial life organized.</p>
+                <p className="text-gray-100 text-base mb-4">At eTijar, we want to lead and drive financial independence and inclusion of Muslims across the greater African region. Money is a medium of social exchange. We are building the fabric to connect every member of this society, from individuals to small business owners to freelancers and beyond. Our human-first and customer-centric approach will make the difference. A digital wallet to help Muslims handle debt, save, invest, and spend money. With our app you can save and invest according to the tenets of shariah, you can pay out Zakat (personal income tax) and create a Will (Wassiyat).</p>
                 <form action="#" className="mt-5 sm:max-w-lg sm:w-full w-3/4 sm:flex">
 									<div className="min-w-0 flex-1">
 										<label htmlFor="hero_email" className="sr-only">
@@ -185,7 +186,7 @@ export default function About() {
 										<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
 									</div>
 									<div className="mt-4 sm:mt-0 sm:ml-3">
-										<a href="" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-blue-400 shadow bg-white hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
+										<a href="https://app.etijar.com" target="_blank" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-blue-400 shadow bg-primary-700 hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
 											Get started
 										</a>
 									</div>

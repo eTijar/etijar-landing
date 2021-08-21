@@ -190,16 +190,9 @@
         transition: all .5s;
     }
     
-    .hideContent{
+    .hide{
         display:none;
-        height:0;
-        transform: all .5s;
-    }
-    .showContent{
-        display: block;
-        height:auto;
-        transform: all .5s
-
+        transition: all .5s;
     }
     .contact:before{
         content:'';
