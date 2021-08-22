@@ -75,8 +75,8 @@ export default function Hero() {
 								<div className=""> Achieve your financial goals without compromise </div></motion.div>
 						
 							                                   {/*********for mobile****************/}
-							<div className="relative w-full flex flex-col items-center p-12">
-							<div className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
+							<div className="relative w-full flex flex-col items-center p-6">
+							<div className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-10 p-5 w-full shadow-lg rounded flex items-center flex-col">
 								<img className="w-10 bg-secondary-300 p-2 rounded-full shadow-lg" src= "/connection.svg" alt="con" />
 							<div className="mt-5">Use secure Banking links to connect your bank accounts and credit cards
 							to view all your transactions in one place</div> </div>
@@ -92,7 +92,7 @@ export default function Hero() {
 							</div>
 							
 					</div>
-					<div className="w-full relative mt-5">
+					<div className="w-full relative mt-8">
 							<div className="text-gray-600 text-shadow text-2xl md:text-3xl font-black text-center mb-6">As Featured In</div>
 							<div className="w-full relative flex justify-around items-center flex-wrap">
 

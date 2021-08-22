@@ -23,8 +23,8 @@ Please note the indicative rate of return shall not be guaranteed and past perfo
                     </p>
                     </div>
                 </div>
-                <div className="w-full flex justify-between flex-wrap">
-                <div className="flex flex-col justify-around items-center mt-10 w-52 mr-14">
+                <div className="w-full flex md:justify-between justify-center flex-wrap">
+                <div className="flex flex-col justify-around items-center mt-10 w-52">
                     <p className="font-bold text-gray-600 text-lg mb-4">Quick Links</p>
                     <a href="/about" className="mb-2 text-gray-600 hover:text-blue-600">About us</a>
                     <a href="" className="mb-2 text-gray-600 hover:text-blue-600">FAQs</a>
@@ -32,11 +32,11 @@ Please note the indicative rate of return shall not be guaranteed and past perfo
                     <a href="" className="mb-2 text-gray-600 hover:text-blue-600">Terms and condition</a>
                     <a href="" className="mb-2 text-gray-600 hover:text-blue-600">Privacy Policy</a>
                 </div>
-                <div className="w-52 mt-10 ">
+                <div className="flex flex-col justify-around items-center w-52 mt-10 ">
                     <p className="font-bold text-gray-600 text-lg mb-4 mr-14">Talk to a human</p>
                     <p className="text-gray-600">If you have any questions about eTijar or the services we are offering, you can email us at support@example.com</p>
                 </div>
-                <div className="w-52 mt-10">
+                <div className="flex flex-col justify-around items-center w-52 mt-10">
                     <p className="font-bold text-gray-600 text-lg mb-4">Contact</p>
                     <p className="text-gray-600">Plot 203 IEC Crescent, off Oladipo Diya Street, Durumi 2, Abuja</p>
                 </div>

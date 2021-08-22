@@ -51,8 +51,8 @@ export default function HeroPlus() {
 	return (
 		<>
 			<div className="relative min-h-auto w-auto mt-5 pt-4 md:pt-2 bg-white ">
-				<div className="flex flex-wrap justify-center lg:justify-between px-12 sm:px-20">
-					<div className="relative w-full lg:w-2/6 h-auto">
+				<div className="w-full flex flex-wrap justify-center lg:justify-between px-12 sm:px-20">
+					<div className="relative w-full lg:w-2/6 h-auto flex justify-center flex-wrap">
 						<motion.img initial={{ scale: 1 }} className="w-auto h-auto relative -top-18" src="/signup.png" alt="signup" />
 						<form action="#" className="-mt-5 sm:max-w-lg sm:w-full sm:flex">
 							<div className="min-w-0 flex-1">
