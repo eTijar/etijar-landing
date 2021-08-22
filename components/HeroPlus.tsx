@@ -8,7 +8,7 @@ import { useState } from 'react';
 export default function HeroPlus() {
 	const { scrollYProgress } = useViewportScroll();
 	const scale = useTransform(scrollYProgress, [0, 1], [1, 0.04]);
-	const [active, setActive] = useState(false);
+	const [active, setActive] = useState("");
 	const faqs = [
 		{
 			id: 'fone',

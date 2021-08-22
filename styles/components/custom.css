@@ -190,8 +190,19 @@
         transition: all .5s;
     }
     
-    .hide{
+    .accContent{
+        background-color:red;
+        box-shadow: 0 0 15px 0 rgba(0,0,0,.3);
+        border-radius:10px;
+        padding:5rem 4rem 10rem 4rem;
+        color:#4b4747;
         display:none;
+        height:0;
+        transition:all .5s;
+    }
+    .accContent.show{
+        display:show;
+        height:auto;
         transition: all .5s;
     }
     .contact:before{
