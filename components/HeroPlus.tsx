@@ -8,6 +8,7 @@ import { useState } from 'react';
 export default function HeroPlus() {
 	const { scrollYProgress } = useViewportScroll();
 	const scale = useTransform(scrollYProgress, [0, 1], [1, 0.04]);
+	const show1 = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 	const [active, setActive] = useState("");
 	const faqs = [
 		{
@@ -51,9 +52,21 @@ export default function HeroPlus() {
 	return (
 		<>
 			<div className="relative min-h-auto w-auto mt-5 pt-4 md:pt-2 bg-white ">
+			<div className="relative min-h-auto w-auto py-10 md:py-5 px-6 lg:px-3 lg:mx-10 mx-6 mb-16  bg-white flex justify-around items-center flex-wrap flex-row-reverse">
+				<img className="w-4/6 lg:w-2/6 p-3 shadow-2xl shapeless" src="investment.png" alt="investment" />
+				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
+					<p className="mt-8 lg:mt-10 md:text-lg lg:text-xl text-base text-gray-500">An investment pot for your children
+Open an investment account for your child where you, your family and friends can all invest for your child’s future.
+Open an account
+When you invest, your capital is at risk.</p>
+				</div>
+				
+			</div>
+
+
 				<div className="w-full flex flex-wrap justify-center lg:justify-between px-12 sm:px-20">
 					<div className="relative w-full lg:w-2/6 h-auto flex justify-center flex-wrap">
-						<motion.img initial={{ scale: 1 }} className="w-auto h-auto relative -top-18" src="/signup.png" alt="signup" />
+						<motion.img className="w-auto h-auto relative -top-18" src="/signup.png" alt="signup" />
 						<form action="#" className="-mt-5 sm:max-w-lg sm:w-full sm:flex">
 							<div className="min-w-0 flex-1">
 								<label htmlFor="hero_email" className="sr-only">

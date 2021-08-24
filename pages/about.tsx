@@ -43,49 +43,40 @@ export default function About() {
     };
 
     return(
-        <motion.div initial='initial' animate='animate' exit='exit' className="relative overflow-hidden mx-auto max-h-auto">
+        <motion.div  className="relative overflow-hidden mx-auto max-h-auto">
         <Head>
 				<title>eTijar - About Page</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
             
-                <div className="relative mb-4 pt-6">
+                <div className="relative mb-4 pt-6 oveflow-hidden">
 
                     {/*******************Header**********************/}
                 <Header />
-                <div className=" flex justify-center flex-wrap relative z-10">
-                <motion.div className="w-full flex justify-center">
-                <motion.div variants= {aboutTxt} className=" mt-32 text-shadow text-center">
-                    <motion.span variants = {letter} className="sm:text-8xl text-5xl text-gray-800 font-black hero-eti">A</motion.span>
-                    <motion.span variants = {letter} className="sm:text-8xl text-5xl text-gray-800 font-black hero-eti">b</motion.span>
-                    <motion.span variants = {letter} className="sm:text-8xl text-5xl text-gray-800 font-black hero-eti">o</motion.span>
-                    <motion.span variants = {letter} className="sm:text-8xl text-5xl text-gray-800 font-black hero-eti">u</motion.span>
-                    <motion.span variants = {letter} className="sm:text-8xl text-5xl text-gray-800 font-black hero-eti">t</motion.span>
-                </motion.div>
-                <motion.div variants = {etiTxt} className=" mt-32 text-shadow text-center ml-6">
-                    <motion.span variants = {letter} className="sm:text-8xl text-5xl text-gray-800 font-black hero-eti">e</motion.span>
-                    <motion.span variants = {letter} className="sm:text-8xl text-5xl text-5xl text-gray-800 font-black hero-eti">T</motion.span>
-                    <motion.span variants = {letter} className="sm:text-8xl text-5xl text-gray-800 font-black hero-eti">i</motion.span>
-                    <motion.span variants = {letter} className="sm:text-8xl text-5xl text-gray-800 font-black hero-eti">j</motion.span>
-                    <motion.span variants = {letter} className="sm:text-8xl text-5xl text-gray-800 font-black hero-eti">a</motion.span>
-                    <motion.span variants = {letter} className="sm:text-8xl text-5xl text-gray-800 font-black hero-eti">r</motion.span>
+                <div className="w-full flex justify-center flex-wrap relative mt-16 px-6">
+                    <div className="lg:w-1/2 md:w-1/2 sm:w-full w-full text-center pt-10 relative">
+                        <div className="text-gray-600 md:text-5xl text-2xl font-black text-shadow hero-eti">About eTijar</div>
+                        <div className="mt-5">
+                        <p className="text-gray-600 text-lg">We love knowing where our money went, we love spending within our means, we wish to make investments 
+                        so we have to save, this is why we built eTijar, an ethical non-interest Investment and finance platform for 
+                        all, anywhere in the world that is 100% halal compliant.</p>
+                        </div>
+                    </div>
+                    <motion.div initial={{y:200, scale:0}} animate={{y:0, scale:1, transition: {delay: .2, ...transition}}} className="lg:w-1/2 md:w-1/2 sm:w-full w-full bg-red-blue flex flex-wrap justify-center relative">
+                        <img className="relative lg:p-32 bg-primary-300 md:p-16 p-8 mt-0 lg:mt-0 md:mt-0 sm:mt-10 mt-10 abt" src="about.png" alt="about" />
                     </motion.div>
-                </motion.div>
-                <motion.div initial={{y:'-20%', width:imageSize.width, height:imageSize.height,}} 
+                
+               {/**<motion.div initial={{y:'-20%', width:imageSize.width, height:imageSize.height,}} 
                  animate={{y:'-10%', width:'100%', height: '500px', transition: {delay: .2, ...transition}}} className="relative flex justify-center">
                 <img className="relative lg:w-3/4 md:w-2/4 w-full lg:h-90 h-full my-16" src = "about.png" alt="about"/>
-                </motion.div>
+    </motion.div>**/}
                 
                 </div>
                 </div>
-                <div className="relative px-6 mt-10">
-                    <div className="px-16">
-                    <p className="text-gray-600 text-lg">We love knowing where our money went, we love spending within our means, we wish to make investments 
-                        so we have to save, this is why we built eTijar, an ethical non-interest Investment and finance platform for 
-                        all, anywhere in the world that is 100% halal compliant.</p>
-                    </div>
+                <div className="relative px-6 mt-20">
+                   
         
-                <div className="bg-white py-3 mt-32">
+                <div className="bg-white py-3 mt-24">
                     <div className="md:px-16 px-6 mb-6">
                         <div className="px-8 flex justify-center items-center flex-wrap">
                             <img src="aboutMulti.png" alt="multi" className="md:w-2/4 w-full mt-4"/>

@@ -166,6 +166,9 @@
     .shapeless{
         border-radius: 65% 35% 42% 58% / 52% 33% 67% 48% ;
     }
+    .abt{
+        border-radius: 65% 35% 42% 58% / 52% 33% 67% 48%;
+    }
     .text-shadow{
         text-shadow: 0 20px 30px rgba(0,0,0,.2);
     }
@@ -381,6 +384,9 @@
     .foot:after{
         left:120px;
         top:160px;
+    }
+    .navbar {
+         padding:0 2rem; 
     }
     
 }

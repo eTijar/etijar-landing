@@ -33,7 +33,7 @@ return(
             <motion.nav className={navb ? 'navbar active' : 'navbar'}aria-label="Global">
 				<div className="flex items-center flex-1">
 					<div className="flex items-center justify-between w-full md:w-auto">
-						<a href="#">
+						<a href="/">
 							<span className="sr-only">Etijar</span>
 							<img className=" w-20 sm:h-14" src="/logo.png" alt="" />
 						</a>
