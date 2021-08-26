@@ -52,16 +52,6 @@ export default function HeroPlus() {
 	return (
 		<>
 			<div className="relative min-h-auto w-auto mt-5 pt-4 md:pt-2 bg-white ">
-			<div className="relative min-h-auto w-auto py-10 md:py-5 px-6 lg:px-3 lg:mx-10 mx-6 mb-16  bg-white flex justify-around items-center flex-wrap flex-row-reverse">
-				<img className="w-4/6 lg:w-2/6 p-3 shadow-2xl shapeless" src="investment.png" alt="investment" />
-				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
-					<p className="mt-8 lg:mt-10 md:text-lg lg:text-xl text-base text-gray-500">An investment pot for your children
-Open an investment account for your child where you, your family and friends can all invest for your child’s future.
-Open an account
-When you invest, your capital is at risk.</p>
-				</div>
-				
-			</div>
 
 
 				<div className="w-full flex flex-wrap justify-center lg:justify-between px-12 sm:px-20">
@@ -100,7 +90,7 @@ When you invest, your capital is at risk.</p>
 			</div>
 
 			
-			<div className="relative min-h-auto w-auto mb-32 mt-16 bg-white">
+			<div className="relative min-h-auto w-auto mb-32 mt-32 bg-white">
 				<div className="w-auto flex justify-center flex-wrap px-8 md:px-20">
 					<div className="w-full text-center mb-6 lg:mb-20">
 						<h2 className="text-4xl md:text-6xl font-black text-gray-300">Three products, One goal.</h2>
@@ -129,6 +119,16 @@ When you invest, your capital is at risk.</p>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div className="relative min-h-auto w-auto py-10 md:py-5 px-6 lg:px-3 lg:mx-10 mx-6 mb-16  bg-white flex justify-around items-center flex-wrap flex-row-reverse">
+				<img className="w-4/6 lg:w-2/6 p-3 shadow-2xl shapeless" src="investment.png" alt="investment" />
+				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
+					<p className="mt-8 lg:mt-10 md:text-lg lg:text-xl text-base text-gray-500">An investment pot for your children
+Open an investment account for your child where you, your family and friends can all invest for your child’s future.
+Open an account
+When you invest, your capital is at risk.</p>
+				</div>
+				
 			</div>
 			<div className="relative min-h-auto w-auto py-10 md:py-5 px-6 lg:px-3 lg:mx-10 mx-6  bg-white flex justify-around items-center flex-wrap">
 				<img className="w-4/6 lg:w-2/6 p-3 shadow-2xl bg-secondary-300 shapeless" src="anxiety.png" alt="anxiety" />
