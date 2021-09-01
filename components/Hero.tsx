@@ -42,7 +42,7 @@ export default function Hero() {
 								</div>
 								<div className="mt-7 sm:max-w-xl">
 									<motion.h1 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.4, ...transition}}} className="text-2xl font-bold text-gray-600 mb-4 tracking-tight sm:text-5xl hero-eti text-shadow">eTijar</motion.h1>
-									<motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.6, ...transition}}} className="text-3xl font-bold text-primary-300 tracking-tight sm:text-6xl hero-eti text-shadow">Make profit not Interest</motion.h2>
+									<motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.6, ...transition}}} className="text-3xl font-bold text-primary-600 tracking-tight sm:text-6xl hero-eti text-shadow">Make profit not Interest</motion.h2>
 									<motion.p initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.8, ...transition}}} className="mt-5 text-base text-gray-500">Organise bank accounts, stocks, investments and safely designate an administrator for your estate. Use our ethical money app to Achieve Your Financial Goals Without Compromising your belief</motion.p>
 								</div>
 								<form action="#" className="mt-8 sm:max-w-lg sm:w-full sm:flex">
@@ -53,7 +53,7 @@ export default function Hero() {
 										<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
 									</div>
 									<div className="mt-4 sm:mt-0 sm:ml-3">
-										<a href="https://app.etijar.com" target="_blank" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow-lg bg-primary-300 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10">
+										<a href="https://app.etijar.com" target="_blank" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow-lg bg-primary-600 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10">
 											Sign Up
 										</a>
 									</div>

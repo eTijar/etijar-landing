@@ -123,7 +123,8 @@ export default function HeroPlus() {
 			<div className="relative min-h-auto w-auto py-10 md:py-5 px-6 lg:px-3 lg:mx-10 mx-6 mb-16  bg-white flex justify-around items-center flex-wrap flex-row-reverse">
 				<img className="w-4/6 lg:w-2/6 p-3 shadow-2xl shapeless" src="investment.png" alt="investment" />
 				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
-					<p className="mt-8 lg:mt-10 md:text-lg lg:text-xl text-base text-gray-500">An investment pot for your children
+					<h3 className="text-2xl text-primary-500 text-center mt-8 lg:mt-10 mb-2 font-bold">An investment pot for your children</h3>
+					<p className=" md:text-lg lg:text-xl text-base text-gray-500">
 Open an investment account for your child where you, your family and friends can all invest for your child’s future.
 Open an account
 When you invest, your capital is at risk.</p>
@@ -158,10 +159,10 @@ When you invest, your capital is at risk.</p>
 					<div className=" w-full flex justify-around flex-wrap">
 						<div className="w-full relative flex justify-around flex-wrap mb-16 lg:mb-32">
 							<div className="w-1/2">
-								<img className="md:w-3/4 w-full h-auto p-3 bg-primary-300 shadow-2xl lg:mb-3 shapeless" src="legal-document.png" alt="legal-document" />
+								<img className="md:w-3/4 w-full h-auto p-3 bg-primary-600 shadow-2xl lg:mb-3 shapeless" src="legal-document.png" alt="legal-document" />
 							</div>
 							<div className="w-full lg:w-1/2 mb-10 lg:mb-2 mt-8 lg:mt-8 rounded-sm p-5 bg-white">
-								<h2 className="text-xl md:text-2xl text-primary-300 font-bold mb-3 text-center">
+								<h2 className="text-xl md:text-2xl text-primary-600 font-bold mb-3 text-center">
 									WASSIYAT <span className="text-gray-400 text-3xl md:text-5xl ml-2">وصیت</span>
 								</h2>
 								<p className="text-base text-gray-500 text-center">
@@ -174,10 +175,10 @@ When you invest, your capital is at risk.</p>
 					<div className=" w-full flex justify-around flex-wrap mb-6 lg:mb-10">
 						<div className="w-full relative flex justify-around flex-wrap flex-row-reverse">
 							<div className="w-1/2">
-								<img className="md:w-3/4 w-full p-3 bg-primary-300 shadow-2xl shapeless h-auto ml-0 lg:ml-8" src="zakat.png" alt="zakat" />
+								<img className="md:w-3/4 w-full p-3 bg-primary-600 shadow-2xl shapeless h-auto ml-0 lg:ml-8" src="zakat.png" alt="zakat" />
 							</div>
 							<div className="w-full lg:w-1/2 mb-10 lg:mb-2 mt-8 lg:mt-8 rounded-sm p-5 bg-white">
-								<h2 className="text-xl md:text-2xl text-primary-300 font-bold mb-3 text-center">
+								<h2 className="text-xl md:text-2xl text-primary-600 font-bold mb-3 text-center">
 									ZAKAT <span className="text-gray-400 text-3xl md:text-5xl ml-2">الزكاة</span>
 								</h2>
 								<p className="text-base text-gray-500 text-center">

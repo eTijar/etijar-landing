@@ -1,7 +1,7 @@
 /* Add custom components here */
 /*For here.tsx*/
 *{
-    font-family: 'Cabin', sans-serif;
+    font-family: 'andada', sans-serif;
 }
 
 .heroo{
@@ -51,7 +51,7 @@
     z-index: 1;
 }
 .hero-eti{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'andada', sans-serif;
 }
 .hero-btn{
     background: #0052D4;  /* fallback for old browsers */
