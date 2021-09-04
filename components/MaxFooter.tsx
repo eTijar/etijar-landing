@@ -3,19 +3,19 @@ import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 export default function MaxFooter() {
     return(
         <>
-            <div className="relative min-h-auto w-auto pb-3 px-6 bg-blue-200 flex items-start justify-between flex-wrap">
+            <div className="relative min-h-auto w-auto pb-3 px-6 bg-gray-200 flex items-start justify-between flex-wrap">
                 <div className="mt-2 w-full flex justify-center flex-wrap">
-                    <div className="mb-4">
+                    <div className="md:mb-4 mb-8">
                         <a href="/">
 							<img className="h-20 sm:h-14" src="/logo.png" alt="" />
 						</a>
                         <p className="text-gray-600">Make profit not interest</p>
-                        <p className="text-gray-600 font-bold text-xl color-primary-300 mb-5">When you invest, your capital is at risk</p>
+                        <p className="text-gray-600 font-bold md:text-xl text-lg color-primary-300 mb-5">When you invest, your capital is at risk</p>
                         <div className="flex space-around mt-3">
-                <a className="text-xl text-secondary-300 rounded-full p-2 bg-gray-200 text-shadow mr-6 hover:bg-blue-300" href="#"><FaTwitter/></a>
-                <a className="text-xl text-secondary-300 rounded-full p-2 bg-gray-200 text-shadow mr-6 hover:bg-blue-300" href="#"><FaFacebook/></a>
-                <a className="text-xl text-secondary-300 rounded-full p-2 bg-gray-200 text-shadow mr-6 hover:bg-blue-300" href="#"><FaInstagram/></a>
-                <a className="text-xl text-secondary-300 rounded-full p-2 bg-gray-200 text-shadow mr-6 hover:bg-blue-300" href="#"><FaLinkedin/></a>
+                <a className="text-xl text-primary-600 rounded-full p-2 bg-blue-300 text-shadow mr-6 hover:bg-white" href="#"><FaTwitter/></a>
+                <a className="text-xl text-primary-600 rounded-full p-2 bg-blue-300 text-shadow mr-6 hover:bg-white" href="#"><FaFacebook/></a>
+                <a className="text-xl text-primary-600 rounded-full p-2 bg-blue-300 text-shadow mr-6 hover:bg-white" href="#"><FaInstagram/></a>
+                <a className="text-xl text-primary-600 rounded-full p-2 bg-blue-300 text-shadow mr-6 hover:bg-white" href="#"><FaLinkedin/></a>
                 </div>
                 </div>
                 <div className="mt-6 px-4 mb-16">
@@ -25,7 +25,7 @@ Please note the indicative rate of return shall not be guaranteed and past perfo
                     </div>
                 </div>
                 <div className="w-full flex md:justify-between justify-center flex-wrap">
-                <div className="flex flex-col justify-around items-center mt-10 w-52">
+                <div className="flex flex-col justify-around mt-10 w-52">
                     <p className="font-bold text-gray-600 text-lg mb-4">Quick Links</p>
                     <a href="/about" className="mb-2 text-gray-600 hover:text-blue-600">About us</a>
                     <a href="" className="mb-2 text-gray-600 hover:text-blue-600">FAQs</a>
@@ -33,11 +33,11 @@ Please note the indicative rate of return shall not be guaranteed and past perfo
                     <a href="" className="mb-2 text-gray-600 hover:text-blue-600">Terms and condition</a>
                     <a href="" className="mb-2 text-gray-600 hover:text-blue-600">Privacy Policy</a>
                 </div>
-                <div className="flex flex-col justify-around items-center w-52 mt-10 ">
+                <div className="flex flex-col justify-around w-52 mt-10 ">
                     <p className="font-bold text-gray-600 text-lg mb-4">Talk to a human</p>
                     <p className="text-gray-600">If you have any questions about eTijar or the services we are offering, you can email us at support@example.com</p>
                 </div>
-                <div className="flex flex-col justify-around items-center w-52 mt-10">
+                <div className="flex flex-col justify-around w-52 mt-10">
                     <p className="font-bold text-gray-600 text-lg mb-4">Contact</p>
                     <p className="text-gray-600">Plot 203 IEC Crescent, off Oladipo Diya Street, Durumi 2, Abuja</p>
                 </div>

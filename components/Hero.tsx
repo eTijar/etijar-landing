@@ -53,7 +53,7 @@ export default function Hero() {
 										<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
 									</div>
 									<div className="mt-4 sm:mt-0 sm:ml-3">
-										<a href="https://app.etijar.com" target="_blank" className="block w-full rounded border border-transparent px-5 py-3 text-base font-medium text-white shadow-xl bg-primary-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10">
+										<a href="https://app.etijar.com" target="_blank" className="block w-full rounded border border-transparent px-5 py-3 text-base font-medium text-white shadow-xl bg-primary-500 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10">
 											Sign Up
 										</a>
 									</div>

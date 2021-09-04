@@ -198,13 +198,13 @@
         box-shadow: 0 0 15px 0 rgba(0,0,0,.3);
         border-radius:10px;
         padding:5rem 4rem 10rem 4rem;
-        color:#4b4747;
+        color:#fbfbfb;
         display:none;
         height:0;
         transition:all .5s;
     }
     .accContent.show{
-        display:show;
+        display:block;
         height:auto;
         transition: all .5s;
     }
@@ -247,6 +247,12 @@
         border-radius: 65% 35% 42% 58% / 52% 33% 67% 48%;
         top:-8rem;
         right:-8rem;
+    }
+    .magic{
+        background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 10px 10px;
     }
 @media screen and (max-width: 1200px) {
     .hero-glass{
