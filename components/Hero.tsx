@@ -41,11 +41,11 @@ export default function Hero() {
 									</a>
 								</div>
 								<div className="mt-7 sm:max-w-xl">
-									<motion.h1 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.4, ...transition}}} className="text-2xl font-bold text-gray-600 mb-4 tracking-tight sm:text-5xl hero-eti text-shadow">eTijar</motion.h1>
-									<motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.6, ...transition}}} className="text-3xl font-bold text-primary-600 tracking-tight sm:text-6xl hero-eti text-shadow">Make profit not Interest</motion.h2>
-									<motion.p initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.8, ...transition}}} className="mt-5 text-base text-gray-500">Organise bank accounts, stocks, investments and safely designate an administrator for your estate. Use our ethical money app to Achieve Your Financial Goals Without Compromising your belief</motion.p>
+									<motion.h1 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.4, ...transition}}} className="text-2xl font-bold text-black mb-3 tracking-tight sm:text-3xl hero-eti text-shadow">eTijar</motion.h1>
+									<motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.6, ...transition}}} className="text-4xl font-bold text-primary-500 tracking-tight sm:text-5xl text-shadow">Make profit not Interest</motion.h2>
+									<motion.p initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.8, ...transition}}} className="mt-5 text-base text-gray-600">Organise bank accounts, stocks, investments and safely designate an administrator for your estate. Use our ethical money app to Achieve Your Financial Goals Without Compromising your belief</motion.p>
 								</div>
-								<form action="#" className="mt-8 sm:max-w-lg sm:w-full sm:flex">
+								<form action="#" className="mt-10 sm:max-w-lg sm:w-full sm:flex">
 									<div className="min-w-0 flex-1">
 										<label htmlFor="hero_email" className="sr-only">
 											Email address
@@ -53,7 +53,7 @@ export default function Hero() {
 										<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
 									</div>
 									<div className="mt-4 sm:mt-0 sm:ml-3">
-										<a href="https://app.etijar.com" target="_blank" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow-lg bg-primary-600 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10">
+										<a href="https://app.etijar.com" target="_blank" className="block w-full rounded border border-transparent px-5 py-3 text-base font-medium text-white shadow-xl bg-primary-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10">
 											Sign Up
 										</a>
 									</div>
@@ -67,11 +67,11 @@ export default function Hero() {
 
 									
 							<motion.div initial={{scale:0.4}} animate={{scale:1}} transition={transition}  className="sm:block hidden absolute p-3 w-72 border bg-white text-xs shadow-xl rounded-lg flex items-center flex-col glass-two">
-								<img className="w-8 bg-secondary-300 p-1 rounded-full" src= "/connection.svg" alt="con" />
+								<img className="w-8 bg-secondary-600 p-1 rounded-full" src= "/connection.svg" alt="con" />
 							<div className="">Use secure Banking links to connect your bank accounts and credit cards
 							to view all your transactions in one place</div> </motion.div>
 							<motion.div initial={{scale:0.4}} animate={{scale:1}} transition={transition} className="sm:block hidden absolute p-3 w-72 border bg-white text-xs shadow-xl rounded-lg flex items-center flex-col glass-three">
-							<img className="w-8 bg-secondary-300 p-1 rounded-full" src= "/target.svg" alt="target" />
+							<img className="w-8 bg-secondary-600 p-1 rounded-full" src= "/target.svg" alt="target" />
 								<div className=""> Achieve your financial goals without compromise </div></motion.div>
 						
 							                                   {/*********for mobile****************/}
@@ -81,10 +81,10 @@ export default function Hero() {
 							<div className="mt-5">Use secure Banking links to connect your bank accounts and credit cards
 							to view all your transactions in one place</div> </div>
 							<div className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
-							<img className="w-10 bg-secondary-300 p-2 rounded-full shadow-lg" src= "/target.svg" alt="target" />
+							<img className="w-10 bg-secondary-600 p-2 rounded-full shadow-lg" src= "/target.svg" alt="target" />
 								<div className="mt-5">Achieve your financial goals without compromise </div></div>
 								<div className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
-							<img className="w-10 bg-secondary-300 p-2 rounded-full shadow-lg" src= "/stats.svg" alt="stats" />
+							<img className="w-10 bg-secondary-600 p-2 rounded-full shadow-lg" src= "/stats.svg" alt="stats" />
 								<div className="mt-5"> Zero Interest, Transparent financing for 
 							small-businesses. Manage your business in one place </div></div>
 							</div>
@@ -93,7 +93,7 @@ export default function Hero() {
 							
 					</div>
 					<div className="w-full relative mt-8">
-							<div className="text-gray-600 text-shadow text-2xl md:text-3xl font-black text-center mb-6">As Featured In</div>
+							<div className="text-primary-800 text-shadow text-2xl md:text-3xl font-black text-center mb-6">As Featured In</div>
 							<div className="w-full relative flex justify-around items-center flex-wrap">
 
 								<img className="w-40 md:w-50  mb-3" src="ifn.png" alt="ifn"/>

@@ -56,6 +56,14 @@ return(
 							About
 						</a>
                         </Link>
+						<Link href="/investment" passHref><a  className="font-medium text-gray-500 hover:text-gray-900">
+							Investment
+						</a>
+                        </Link>
+						<Link href="/savings" passHref><a  className="font-medium text-gray-500 hover:text-gray-900">
+							Savings
+						</a>
+                        </Link>
 						
                         <Link href="/contact" passHref>
                         <a  className="font-medium text-gray-500 hover:text-gray-900">
@@ -95,6 +103,14 @@ return(
 						<Link href="/about" passHref><a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
 							About
 						</a></Link>
+						<Link href="/investment" passHref><a  className="font-medium text-gray-500 hover:text-gray-900">
+							Investment
+						</a>
+                        </Link>
+						<Link href="/savings" passHref><a  className="font-medium text-gray-500 hover:text-gray-900">
+							Savings
+						</a>
+                        </Link>s
 
                         <Link href="/contact" passHref><a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
 							Contact Us
