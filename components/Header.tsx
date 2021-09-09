@@ -67,7 +67,7 @@ return(
 						
                         <Link href="/contact" passHref>
                         <a  className="font-medium text-gray-500 hover:text-gray-900">
-							Contact Us
+							Contact
 						</a>
                         </Link>
 					</div>

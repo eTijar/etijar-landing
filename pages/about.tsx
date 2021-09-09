@@ -53,17 +53,17 @@ export default function About() {
 
                     {/*******************Header**********************/}
                 <Header />
-                <div className="w-full flex justify-center flex-wrap relative mt-16 px-6">
-                    <div className="lg:w-1/2 md:w-1/2 sm:w-full w-full text-center pt-10 relative">
-                        <div className="text-gray-600 md:text-5xl text-2xl font-black text-shadow hero-eti">About eTijar</div>
-                        <div className="mt-5">
-                        <p className="text-gray-600 text-lg">We love knowing where our money went, we love spending within our means, we wish to make investments 
+                <div className="w-full relative mt-10 px-6 py-40 magic">
+                    <div className=" w-full text-center pt-10 relative">
+                        <div className="text-gray-50 md:text-6xl text-5xl font-black text-shadow hero-eti">About eTijar</div>
+                        <div className="absolute bg-blue-50  border shadow-2xl rounded md:w-1/2 w-3/4 px-3 py-6 mt-5 lg:ml-72 mt-16 md:ml-52 sm:ml-24 ml-12">
+                        <p className="text-primary-600 text-sm md:text-base">We love knowing where our money went, we love spending within our means, we wish to make investments 
                         so we have to save, this is why we built eTijar, an ethical non-interest Investment and finance platform for 
                         all, anywhere in the world that is 100% halal compliant.</p>
                         </div>
                     </div>
                     <motion.div initial={{y:200, scale:0}} animate={{y:0, scale:1, transition: {delay: .2, ...transition}}} className="lg:w-1/2 md:w-1/2 sm:w-full w-full bg-red-blue flex flex-wrap justify-center relative">
-                        <img className="relative lg:p-32 bg-primary-600 md:p-16 p-8 mt-0 lg:mt-0 md:mt-0 sm:mt-10 mt-10 abt" src="about.png" alt="about" />
+                        
                     </motion.div>
                 
                {/**<motion.div initial={{y:'-20%', width:imageSize.width, height:imageSize.height,}} 
@@ -73,7 +73,7 @@ export default function About() {
                 
                 </div>
                 </div>
-                <div className="relative px-6 mt-20">
+                <div className="relative px-6 mt-40">
                    
         
                 <div className="bg-white py-3 mt-24">
@@ -82,7 +82,7 @@ export default function About() {
                             <img src="aboutMulti.png" alt="multi" className="md:w-2/4 w-full mt-4"/>
 
                             <div className="md:w-2/4 w-full py-10 mb-8 px-3 bg-white md:-ml-24 ml-0 border-r-8 border-blue-900 shadow-lg">
-                            <p className="text-gray-600 text-base">With a multi-currency e-wallet back by a fully licensed Islamic bank that
+                            <p className="text-gray-500 text-base">With a multi-currency e-wallet back by a fully licensed Islamic bank that
                              is NDIC insured, which allows you to get non-interest financing for your business, 
                              with personal/business bill payments and acceptance.</p>
                             </div>
@@ -93,7 +93,7 @@ export default function About() {
                             <img src="aboutInsight.png" alt="abtInsight" className="md:w-2/4 w-full mt-4"/>
 
                             <div className="md:w-2/4 w-full py-10 mb-8 px-3 bg-white md:-mr-24 mr-0 border-l-8 border-blue-900 shadow-lg">
-                            <p className="text-gray-600 text-base">eTijar helps you gain insights on your debt, expenses, budget, and increase in your savings
+                            <p className="text-gray-500 text-base">eTijar helps you gain insights on your debt, expenses, budget, and increase in your savings
                              that leads to investments for your future income with selected shariah-compliant equities and index funds. 
                              eTijar is 100% interest free and 100% Halal.</p>
                             </div>
@@ -101,25 +101,25 @@ export default function About() {
                         </div>
                         </div>
                         <div className="relative w-full px-6 mt-16 mb-4 flex justify-around flex-wrap">
-                        <div className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-600 hover:shadow-2xl duration-100">
-                            <div className="text-white text-5xl w-10 px-2 flex items-center justify-center rounded-lg bg-primary-600 shadow-lg mb-3 hover:bg-white hover:text-primary-600"><FaMosque/></div>
-                            <h3 className="text-lg font-bold mb-2">Shariah Compliant</h3>
-                            <p className="text-base">Your investments are screened against Islamic principles to give you piece of mind.</p>
+                        <div className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-100 hover:shadow-2xl duration-100">
+                            <div className="text-primary-400 text-5xl w-10 px-2 flex items-center justify-center rounded-lg bg-blue-200 shadow-lg mb-3 hover:bg-white"><FaMosque/></div>
+                            <h3 className="text-lg font-bold mb-2 text-primary-600">Shariah Compliant</h3>
+                            <p className="text-base text-gray-500">Your investments are screened against Islamic principles to give you piece of mind.</p>
                         </div>
-                        <div className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-600 hover:shadow-2xl duration-100">
-                            <div className="text-white text-5xl w-10 px-2 flex items-center justify-center rounded-lg bg-primary-600 shadow-lg mb-3 hover:bg-white hover:text-primary-600"><FaLaptop/></div>
-                            <h3 className="text-lg font-bold mb-2">Tailored Investment Plan</h3>
-                            <p className="text-base">We analyze your investment objectives and risk preferences to help you make informed decisions.</p>
+                        <div className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-100 hover:shadow-2xl duration-100">
+                            <div className="text-primary-400 text-5xl w-10 px-2 flex items-center justify-center rounded-lg bg-blue-200 shadow-lg mb-3 hover:bg-white"><FaLaptop/></div>
+                            <h3 className="text-lg font-bold mb-2 text-primary-600">Tailored Investment Plan</h3>
+                            <p className="text-base text-gray-500">We analyze your investment objectives and risk preferences to help you make informed decisions.</p>
                         </div>
-                        <div className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-600 hover:shadow-2xl duration-100">
-                            <div className="text-white text-5xl w-10 px-2 flex items-center justify-center rounded-lg bg-primary-600 shadow-lg mb-3 hover:bg-white hover:text-primary-600"><FaUsers/></div>
-                            <h3 className="text-lg font-bold mb-2">Professional Management</h3>
-                            <p className="text-base">Your investments are managed by experienced and professional fund managers.</p>
+                        <div className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-100 hover:shadow-2xl duration-100">
+                            <div className="text-primary-400 text-5xl w-10 px-2 flex items-center justify-center rounded-lg bg-blue-200 shadow-lg mb-3 hover:bg-white"><FaUsers/></div>
+                            <h3 className="text-lg font-bold mb-2 text-primary-600">Professional Management</h3>
+                            <p className="text-base text-gray-500">Your investments are managed by experienced and professional fund managers.</p>
                         </div>
-                        <div className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-600 hover:shadow-2xl duration-100">
-                            <div className="text-white text-5xl w-10 px-2 flex items-center justify-center rounded-lg bg-primary-600 shadow-lg mb-3 hover:bg-white hover:text-primary-600"><FaClock/></div>
-                            <h3 className="text-lg font-bold mb-2">Regular Savings Plan</h3>
-                            <p className="text-base">A monthly investment plan that helps you reach financial goals faster and easier.</p>
+                        <div className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-100 hover:shadow-2xl duration-100">
+                            <div className="text-primary-400 text-5xl w-10 px-2 flex items-center justify-center rounded-lg bg-blue-200 shadow-lg mb-3 hover:bg-white"><FaClock/></div>
+                            <h3 className="text-lg font-bold mb-2 text-primary-600">Regular Savings Plan</h3>
+                            <p className="text-base text-gray-500">A monthly investment plan that helps you reach financial goals faster and easier.</p>
                         </div>
                         </div>
 
@@ -177,7 +177,7 @@ export default function About() {
 										<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
 									</div>
 									<div className="mt-4 sm:mt-0 sm:ml-3">
-										<a href="https://app.etijar.com" target="_blank" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-blue-400 shadow bg-primary-700 hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
+										<a href="https://app.etijar.com" target="_blank" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-blue-50 shadow bg-primary-400 hover:bg-primary-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
 											Get started
 										</a>
 									</div>

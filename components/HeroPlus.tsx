@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 export default function HeroPlus() {
 	const { scrollYProgress } = useViewportScroll();
-	const scale = useTransform(scrollYProgress, [0, 1], [1, 0.04]);
+	const scale = useTransform(scrollYProgress, [0, 1, 1], [1, 0.5, 0.04]);
 	const show1 = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 	const [active, setActive] = useState("");
 	const faqs = [
@@ -56,7 +56,7 @@ export default function HeroPlus() {
 
 				<div className="w-full flex flex-wrap justify-center lg:justify-between px-12 sm:px-20">
 					<div className="relative w-full lg:w-2/6 h-auto flex justify-center flex-wrap">
-						<motion.img className="w-auto h-auto relative -top-18" src="/signup.png" alt="signup" />
+						<motion.img style={{scale:scale}} className="w-auto h-auto relative -top-18" src="/signup.png" alt="signup" />
 						<form action="#" className="-mt-5 sm:max-w-lg sm:w-full sm:flex">
 							<div className="min-w-0 flex-1">
 								<label htmlFor="hero_email" className="sr-only">
@@ -93,29 +93,29 @@ export default function HeroPlus() {
 			<div className="relative min-h-auto w-auto mb-32 mt-32 bg-white">
 				<div className="w-auto flex justify-center flex-wrap px-8 md:px-20">
 					<div className="w-full text-center mb-6 lg:mb-20">
-						<h2 className="text-2xl md:text-6xl font-black text-gray-300">Three products, One goal.</h2>
+						<h2 className="text-2xl md:text-6xl font-black text-gray-300">Three products, <span className=" text-secondary-500 opacity-60">One goal.</span></h2>
 					</div>
 					<div className=" w-full flex justify-around flex-wrap">
 						<div className=" relative w-3/4 lg:w-1/4 mb-20 lg:mb-2 bg-white shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box1">
 							<h2 className="text-lg text-primary-800 font-bold mb-3">Personal loans for the everyday borrower</h2>
 							eTijar offer access to personal loans for middle-income borrowers that need help with things like unexpected personal expenses in the form of Qard Hasn a Benevolent Loan at 0% interest forever.
-							<button type="button" className="block mt-3 text-sm text-secondary-300 rounded font-bold hover:text-secondary-600 duration-100">
+							<a href="/about" className="block mt-3 text-sm text-secondary-300 rounded font-bold hover:text-secondary-600 duration-100">
 								Learn more <FaArrowRight className="inline" />
-							</button>
+							</a>
 						</div>
 						<div className="relative w-3/4 lg:w-1/4 mb-20 lg:mb-2 bg-white shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box2">
 							<h2 className="text-lg text-primary-800 font-bold mb-3">Transparent financing for business</h2>
 							eTijar helps you build your small business and grow while staying within your personal beliefs, ethical and shariah business rules.
-							<button type="button" className=" block mt-3 text-sm text-secondary-300 rounded font-bold hover:text-secondary-600 duration-100">
+							<a href="/about" className=" block mt-3 text-sm text-secondary-300 rounded font-bold hover:text-secondary-600 duration-100">
 								Learn more <FaArrowRight className="inline" />
-							</button>
+							</a>
 						</div>
 						<div className="relative w-3/4 lg:w-1/4 mb-2 lg:mb-2 shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box3">
 							<h2 className="text-lg text-primary-800 font-bold mb-3">Ethical Wealth and Growth</h2>
 							You do not and should never compromise on your beliefs to make money. eTijar provides a means for you to invest and grow your money safely and securely for the medium and long-term that will not conflict with your belief or principles.
-							<button type="button" className=" block mt-3 text-sm text-secondary-300 rounded font-bold hover:text-secondary-600 duration-100">
+							<a href="/about" className=" block mt-3 text-sm text-secondary-300 rounded font-bold hover:text-secondary-600 duration-100">
 								Learn more <FaArrowRight className="inline" />
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -127,9 +127,7 @@ export default function HeroPlus() {
 				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
 					<h3 className="text-xl md:text-2xl text-primary-800 font-bold mb-3 text-center mt-8 lg:mt-10  font-bold">An investment pot for your children</h3>
 					<p className="text-base text-gray-100">
-Open an investment account for your child where you, your family and friends can all invest for your child’s future.
-Open an account
-When you invest, your capital is at risk.</p>
+Open an investment account for your child where you, your family and friends can all invest for your child’s future.</p>
 				</div>
 				
 			</div>
@@ -156,7 +154,7 @@ When you invest, your capital is at risk.</p>
 			<div className="relative min-h-auto w-auto mt-32 bg-white">
 				<div className="w-auto flex justify-center flex-wrap px-8 md:px-32">
 					<div className="w-full text-center mb-10 lg:mb-20">
-						<h2 className="text-4xl md:text-6xl font-black text-gray-300">UNBURDEN YOURSELF</h2>
+						<h2 className="text-4xl md:text-6xl font-black text-gray-300"><span className=" text-secondary-500 opacity-60">UNBURDEN</span> YOURSELF</h2>
 					</div>
 
 					<div className=" w-full flex justify-around flex-wrap">
@@ -165,10 +163,10 @@ When you invest, your capital is at risk.</p>
 								<img className="md:w-3/4 w-full h-auto lg:mb-3" src="legal-document.png" alt="legal-document" />
 							</div>
 							<div className="w-full lg:w-1/2 mb-10 lg:mb-2 mt-8 lg:mt-8 rounded-sm p-5 bg-white">
-								<h2 className="text-xl md:text-2xl text-primary-600 font-bold mb-3 text-center">
+								<h2 className="text-xl md:text-2xl text-primary-600 font-bold mb-3">
 									WASSIYAT <span className="text-gray-400 text-3xl md:text-5xl ml-2">وصیت</span>
 								</h2>
-								<p className="text-base text-gray-500 text-center">
+								<p className="text-base text-gray-500">
 									Many people leave their estates to guesses and squabbles, a lot of assets never get found or known about, even more creating an estate plan in compliance with Islamic rules of inheritance is a practice abandoned. Wassiyat changes everything. Now you can create legal documents that
 									comply with Islamic rules in minutes, at a very low cost, and in the comfort and privacy of your own home. We can further get it notarized if you desire. We keep simple so reviews are easy and quick.
 								</p>
@@ -181,10 +179,10 @@ When you invest, your capital is at risk.</p>
 								<img className="md:w-3/4 w-full h-auto ml-0 lg:ml-8" src="zakat.png" alt="zakat" />
 							</div>
 							<div className="w-full lg:w-1/2 mb-10 lg:mb-2 mt-8 lg:mt-8 rounded-sm p-5 bg-white">
-								<h2 className="text-xl md:text-2xl text-primary-600 font-bold mb-3 text-center">
+								<h2 className="text-xl md:text-2xl text-primary-600 font-bold mb-3">
 									ZAKAT <span className="text-gray-400 text-3xl md:text-5xl ml-2">الزكاة</span>
 								</h2>
-								<p className="text-base text-gray-500 text-center">
+								<p className="text-base text-gray-500">
 									Zakat is obligatory on all Muslims who are in possession of surplus wealth for a full lunar year, exceeding the monetary value of 85 grams of gold (7.5 Tola), we will help you calculate it either by your manual input or as an automated action from your eTijar account. eTijar will
 									help you with deduction and payout to vetted charities, zakat funds, and individuals of your choice.
 								</p>

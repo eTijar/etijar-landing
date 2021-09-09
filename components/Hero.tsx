@@ -42,7 +42,7 @@ export default function Hero() {
 								</div>
 								<div className="mt-7 sm:max-w-xl">
 									<motion.h1 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.4, ...transition}}} className="text-2xl font-bold text-black mb-3 tracking-tight sm:text-3xl hero-eti text-shadow">eTijar</motion.h1>
-									<motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.6, ...transition}}} className="text-4xl font-bold text-primary-500 tracking-tight sm:text-5xl text-shadow">Make profit not Interest</motion.h2>
+									<motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.6, ...transition}}} className="text-4xl font-bold text-primary-500 tracking-tight sm:text-5xl text-shadow">Make profit <span className="text-secondary-500">not Interest</span></motion.h2>
 									<motion.p initial={{y:20, opacity:0}} animate={{y:0, opacity:1, transition: {delay:0.8, ...transition}}} className="mt-5 text-base text-gray-600">Organise bank accounts, stocks, investments and safely designate an administrator for your estate. Use our ethical money app to Achieve Your Financial Goals Without Compromising your belief</motion.p>
 								</div>
 								<form action="#" className="mt-10 sm:max-w-lg sm:w-full sm:flex">
@@ -67,11 +67,11 @@ export default function Hero() {
 
 									
 							<motion.div initial={{scale:0.4}} animate={{scale:1}} transition={transition}  className="sm:block hidden absolute p-3 w-72 border bg-white text-xs shadow-xl rounded-lg flex items-center flex-col glass-two">
-								<img className="w-8 bg-secondary-600 p-1 rounded-full" src= "/connection.svg" alt="con" />
+								<img className="w-8 bg-secondary-500 p-1 rounded-full" src= "/connection.svg" alt="con" />
 							<div className="">Use secure Banking links to connect your bank accounts and credit cards
 							to view all your transactions in one place</div> </motion.div>
 							<motion.div initial={{scale:0.4}} animate={{scale:1}} transition={transition} className="sm:block hidden absolute p-3 w-72 border bg-white text-xs shadow-xl rounded-lg flex items-center flex-col glass-three">
-							<img className="w-8 bg-secondary-600 p-1 rounded-full" src= "/target.svg" alt="target" />
+							<img className="w-8 bg-secondary-500 p-1 rounded-full" src= "/target.svg" alt="target" />
 								<div className=""> Achieve your financial goals without compromise </div></motion.div>
 						
 							                                   {/*********for mobile****************/}
