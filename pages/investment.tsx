@@ -71,7 +71,7 @@ BY MAKING IT <span className="text-secondary-500">WORK FOR YOU</span>
 				</div>
 				
 			</div>
-            <div className=" w-full flex justify-around flex-wrap bg-blue-50 mt-32 md:px-6 px-3 py-10">
+            <div className=" w-full flex justify-around flex-wrap bg-blue-50 mt-32 md:px-6 px-3 py-16">
 						<div className=" relative w-3/4 lg:w-1/4 mb-20 lg:mb-2 bg-white shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100">
                         <div className="text-green-400 text-5xl w-10 px-2 flex items-center justify-center rounded-full bg-green-200 shadow-lg mb-3"><FaMoneyBillWave/></div>
                             <h2 className="text-lg text-primary-800 font-bold mb-3">Diversified</h2>
@@ -100,50 +100,35 @@ Investing in low-cost Index Funds that track the market performance and seeks to
                     </div>
                     <div className=" w-full flex justify-around flex-wrap md:px-6 px-3 py-10">
 						<div className=" relative w-3/4 lg:w-1/4 mb-20 lg:mb-2 p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100">
-                            <h2 className="w-full text-center text-lg text-primary-800 font-bold mb-6">1.	We get to know you</h2>
-                            <div className="w-full flex flex-col items-center flex-wrap ">
-                            <div className="flex items-center mb-3">
-                            <div className="text-base text-blue-600 mr-3"><FaQuestion /></div> <p className=" mb-2">How is your financial life? </p>
-
+                        <div className="text-blue-400 text-4xl text-center w-10 px-2 flex items-center justify-center rounded-full bg-blue-200 shadow-lg mb-3"><FaQuestion/></div>
+                            <h2 className="w-full text-lg text-primary-50 font-bold mb-6">1.	We get to know you</h2>
+                            <div className="w-full flex flex-col flex-wrap ">
+                            <p className=" mb-2">a.How is your financial life? </p>
+                            <p className="mb-2">b.why and what you are investing for? </p>
+                            <p className="mb-2">c.How much risk can you take? </p>
+                            <p className="mb-2">d.	How long do you intend to invest? </p>
+                        
                                 </div>
-                                </div>
-                                <div className="w-full flex flex-col items-center flex-wrap ">
-                            <div className="flex items-center mb-3">
-                            <div className="text-base text-blue-600 mr-3"><FaQuestion /></div> <p className="mb-2">why and what you are investing for? </p>
-
-                                </div>
-                                </div>
-
-                                <div className="w-full flex flex-col items-center flex-wrap ">
-                            <div className="flex items-center mb-3">
-                            <div className="text-base text-blue-600 mr-3"><FaQuestion /></div> <p className="mb-2">How much risk can you take? </p>
-
-                                </div>
-                                </div>
-
-                                <div className="w-full flex flex-col items-center flex-wrap ">
-                            <div className="flex items-center  mb-3">
-                            <div className="text-base text-blue-600 mr-3"><FaQuestion /></div> <p className="mb-2">d.	How long do you intend to invest? </p>
-
-                                </div>
-                                </div>
+                            
 						</div>
 						<div className="relative w-3/4 lg:w-1/4 mb-20 lg:mb-2 p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100">
 							<div className="text-blue-400 text-5xl text-center w-10 px-2 flex items-center justify-center rounded-full bg-blue-200 shadow-lg mb-3"><FaRocket/></div>
-                            <h2 className="text-lg text-primary-800 font-bold mb-3">2. We build Your Portfolio</h2>
+                            <h2 className="text-lg text-primary-50 font-bold mb-3">2. We build Your Portfolio</h2>
                             Based on your responses we build you, your portfolio, that meets you peculiar situation and future financial plans.
 						</div>
 						<div className="relative w-3/4 lg:w-1/4 mb-20 lg:mb-2 p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100">
 							<div className="text-blue-400 text-5xl text-center w-10 px-2 flex items-center justify-center rounded-full bg-blue-200 shadow-lg mb-3"><FaBalanceScale/></div>
-                            <h2 className="text-lg text-primary-800 font-bold mb-3">3. Then we Put your Money to work</h2>
+                            <h2 className="text-lg text-primary-50 font-bold mb-3">3. Then we Put your Money to work</h2>
                             We are always working to rebalance and Optimise your portfolio, even while you are asleep, your money keeps working, reinvesting all dividends back into your portfolio, for full and continuous growth.
 						</div>
 					</div>
                     </div>
-                    <div className="relative min-h-auto w-auto pb-10 md:pb-8 px-6 lg:px-3 lg:mx-10 mx-6  flex justify-around items-center flex-wrap flex-row-reverse">
-				
-				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
-					<h3 className="text-xl md:text-2xl text-primary-800 font-bold mb-3 text-center mt-8 lg:mt-10  font-bold">100% HALAL</h3>
+                    <div className="relative min-h-auto w-auto bg-blue-50 mb-32 pb-10 md:pb-8 px-6 lg:px-3 lg:mx-10 mx-6  flex justify-around items-center flex-wrap">
+                    <div className=" lg:w-3/6 h-full lg:-mt-32 lg:-mb-32 -mt-32 -mb-0">
+                    <motion.img whileHover= {{scale:0.8}} className="" src="investment-phone.png" alt="investment-phone" />
+                    </div>
+				<div className="w-full lg:w-2/6 h-full">
+					<h3 className="text-xl md:text-2xl text-primary-800 font-bold mb-3 mt-8 lg:mt-10  font-bold">100% HALAL</h3>
 					<p className="text-base text-gray-500">
                     Our Halal Portfolios are made up of Sukuks, ETFs, Mutual Funds, Index Funds, that follow Islamic laws and principles of investing, such as are not forbidden to Muslims or harm the earth and environment.</p>
 				</div>
