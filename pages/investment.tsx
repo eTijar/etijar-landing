@@ -8,34 +8,6 @@ import { FaMoneyBillWave, FaChartLine, FaLaptopCode, FaQuestion, FaRocket, FaBal
 
 const transition = {duration:1.2, ease: [0.6, 0.01, -0.05, 0.9]};
 
-const aboutTxt = {
-    animate: {
-        transition: {
-            delayChildren: .6,
-            staggerChildren: .04,
-            staggerDirection: -1,
-        },
-    },
-};
-const etiTxt = {
-        animate: {
-        transition: {
-            delayChildren: .6,
-            staggerChildren: .04,
-            staggerDirection: 1,
-        },
-    },
-};
-const letter = {
-    initial: {
-        y:400,
-    },
-    animate: {
-        y:0,
-        transition: {duration:1, ...transition}
-    },
-};
-
 export default function Investment() {
     const imageSize = {
         width:200,
