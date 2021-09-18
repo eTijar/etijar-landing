@@ -1,13 +1,15 @@
 import Link from 'next/link';
 import { motion, AnimatePresence, useTransform, useViewportScroll } from 'framer-motion';
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaArrowRight } from 'react-icons/fa';
 import FAQs from './faqs';
 import { useState } from 'react';
 
+
 export default function HeroPlus() {
 	const { scrollYProgress } = useViewportScroll();
-	const scale = useTransform(scrollYProgress, [0, 1], [1, 0.04]);
-	const [active, setActive] = useState(false);
+	const scale = useTransform(scrollYProgress, [0, 1, 1], [1, 0.5, 0.04]);
+	const show1 = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+	const [active, setActive] = useState("");
 	const faqs = [
 		{
 			id: 'fone',
@@ -27,7 +29,7 @@ export default function HeroPlus() {
 		{
 			id: 'ffour',
 			accTitle: 'How do you make money if interest is prohibited?',
-			accContent: '>Islamic financiers operate without interest, which is not permitted in Islam. Instead, money is generated through profit from investments. Each Islamic finance or investment firm has a panel of Muslim advisers who ensure that these investments are compliant with Sharia law.',
+			accContent: 'Islamic financiers operate without interest, which is not permitted in Islam. Instead, money is generated through profit from investments. Each Islamic finance or investment firm has a panel of Muslim advisers who ensure that these investments are compliant with Sharia law.',
 		},
 		{
 			id: 'ffive',
@@ -49,10 +51,12 @@ export default function HeroPlus() {
 	];
 	return (
 		<>
-			<div className="relative min-h-auto w-auto mt-5 pt-4 md:pt-2 bg-white ">
-				<div className="flex flex-wrap justify-center lg:justify-between px-12 sm:px-20">
-					<div className="relative w-full lg:w-2/6 h-auto">
-						<motion.img initial={{ scale: 1 }} className="w-auto h-auto relative -top-18" src="/signup.png" alt="signup" />
+			<div className="relative min-h-auto w-auto md:mt-5 mt-16  pt-4 md:pt-2 bg-white ">
+
+
+				<div className="w-full flex flex-wrap justify-center lg:justify-between px-12 sm:px-20">
+					<div className="relative w-full lg:w-2/6 h-auto flex justify-center flex-wrap">
+						<motion.img style={{scale:scale}} className="w-auto h-auto relative -top-18" src="/signup.png" alt="signup" />
 						<form action="#" className="-mt-5 sm:max-w-lg sm:w-full sm:flex">
 							<div className="min-w-0 flex-1">
 								<label htmlFor="hero_email" className="sr-only">
@@ -61,14 +65,14 @@ export default function HeroPlus() {
 								<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
 							</div>
 							<div className="mt-4 sm:mt-0 sm:ml-3">
-								<button type="submit" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
+								<a href ="https://app.etijar.com" target="_blank" className="block w-full rounded border border-transparent px-5 py-3 text-base font-medium text-white shadow hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
 									Sign Up
-								</button>
+								</a>
 							</div>
 						</form>
 					</div>
 					<div className="relative mt-8 w-full lg:w-2/6 h-auto flex flex-col flex-wrap blur mb-6">
-						<h2 className="text-gray-700 text-lg md:text-2xl font-bold m-4">At eTijar, we believe that the best opportunities should be seized, on your own terms.</h2>
+						<h2 className="text-primary-800 text-lg md:text-2xl m-4">At eTijar, we believe that the best opportunities should be seized, on your own terms.</h2>
 						<div className=" px-4 py-5 pb-2 rounded font-base text-gray-600 flex items-center heroo">
 							<img className="w-12 h-12 mr-2 p-2 bg-red-300 rounded shadow-xl" src="handcoin.png" alt="hand-coin" />
 							<p>Achieve your financial goals by investing in Islamic Investments</p>
@@ -85,51 +89,52 @@ export default function HeroPlus() {
 				</div>
 			</div>
 
-			<div className="relative min-h-auto w-auto py-24 md:py-16 px-9 lg:px-0 mx-6 lg:mx-10 bg-white flex justify-around items-center flex-wrap flex-row-reverse">
-				<img className="w-4/6 lg:w-2/6" src="islamic.png" alt="islamic" />
-				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
-					<h2 className="mt-5 lg:mt-10 md:text-lg lg:text-xl text-base text-gray-500">Achieve your financial goals by investing in Islamic Investments.</h2>
-					<div className="mt-6 sm:mt-3 ">
-						<a href="" className="block w-full rounded-md border border-transparent px-2 py-2 text-base font-medium text-white shadow bg-red-400 hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
-							Get started
-						</a>
-					</div>
-				</div>
-			</div>
-			<div className="relative min-h-auto w-auto mb-32 mt-16 bg-white">
+			
+			<div className="relative min-h-auto w-auto mb-32 mt-32 bg-white">
 				<div className="w-auto flex justify-center flex-wrap px-8 md:px-20">
 					<div className="w-full text-center mb-6 lg:mb-20">
-						<h2 className="text-4xl md:text-6xl font-black text-gray-300">Three products, One goal.</h2>
+						<h2 className="text-2xl md:text-6xl font-black text-gray-300">Three products, <span className=" text-secondary-500 opacity-60">One goal.</span></h2>
 					</div>
 					<div className=" w-full flex justify-around flex-wrap">
 						<div className=" relative w-3/4 lg:w-1/4 mb-20 lg:mb-2 bg-white shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box1">
-							<h2 className="text-lg text-blue-900 font-bold mb-3">Personal loans for the everyday borrower</h2>
+							<h2 className="text-lg text-primary-800 font-bold mb-3">Personal loans for the everyday borrower</h2>
 							eTijar offer access to personal loans for middle-income borrowers that need help with things like unexpected personal expenses in the form of Qard Hasn a Benevolent Loan at 0% interest forever.
-							<button type="button" className="block px-3 py-2 my-2 text-sm bg-red-300 rounded-full text-white hover:bg-black duration-100">
-								Learn more
-							</button>
+							<a href="/about" className="block mt-3 text-sm text-secondary-300 rounded font-bold hover:text-secondary-600 duration-100">
+								Learn more <FaArrowRight className="inline" />
+							</a>
 						</div>
 						<div className="relative w-3/4 lg:w-1/4 mb-20 lg:mb-2 bg-white shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box2">
-							<h2 className="text-lg text-blue-900 font-bold mb-3">Transparent financing for business</h2>
+							<h2 className="text-lg text-primary-800 font-bold mb-3">Transparent financing for business</h2>
 							eTijar helps you build your small business and grow while staying within your personal beliefs, ethical and shariah business rules.
-							<button type="button" className=" block px-3 py-2 my-2 text-sm bg-red-300 rounded-full text-white hover:bg-black duration-100">
-								Learn more
-							</button>
+							<a href="/about" className=" block mt-3 text-sm text-secondary-300 rounded font-bold hover:text-secondary-600 duration-100">
+								Learn more <FaArrowRight className="inline" />
+							</a>
 						</div>
 						<div className="relative w-3/4 lg:w-1/4 mb-2 lg:mb-2 shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box3">
-							<h2 className="text-lg text-blue-900 font-bold mb-3">Ethical Wealth and Growth</h2>
+							<h2 className="text-lg text-primary-800 font-bold mb-3">Ethical Wealth and Growth</h2>
 							You do not and should never compromise on your beliefs to make money. eTijar provides a means for you to invest and grow your money safely and securely for the medium and long-term that will not conflict with your belief or principles.
-							<button type="button" className=" block px-3 py-2 my-2 text-sm bg-red-300 rounded-full text-white hover:bg-black duration-100">
-								Learn more
-							</button>
+							<a href="/about" className=" block mt-3 text-sm text-secondary-300 rounded font-bold hover:text-secondary-600 duration-100">
+								Learn more <FaArrowRight className="inline" />
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="relative min-h-auto w-auto py-10 md:py-5 px-6 lg:px-3 lg:mx-10 mx-6  bg-white flex justify-around items-center flex-wrap">
-				<img className="w-4/6 lg:w-2/6 p-3 shadow-2xl bg-secondary-300 shapeless" src="anxiety.png" alt="anxiety" />
+			
+		<div className="bg-primary-50">
+			<div className="relative min-h-auto w-auto py-10 md:py-8 px-6 lg:px-3 lg:mx-10 mx-6  flex justify-around items-center flex-wrap flex-row-reverse">
+				<img className="w-4/6 lg:w-2/6 p-3 shadow-2xl shapeless" src="investment.png" alt="investment" />
 				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
-					<p className="mt-8 lg:mt-10 md:text-lg lg:text-xl text-base text-gray-500">Let eTijar take the anxiety and hassle out of managing your finances. Instantly unlock insights on your spending.</p>
+					<h3 className="text-xl md:text-2xl text-primary-800 font-bold mb-3 text-center mt-8 lg:mt-10  font-bold">An investment pot for your children</h3>
+					<p className="text-base text-gray-100">
+Open an investment account for your child where you, your family and friends can all invest for your child’s future.</p>
+				</div>
+				
+			</div>
+			<div className="relative min-h-auto w-auto py-10 md:py-5 px-6 lg:px-3 lg:mx-10 mx-6 flex justify-around items-center flex-wrap">
+				<img className="w-4/6 lg:w-2/6 p-3 shadow-2xl shapeless" src="anxiety.png" alt="anxiety" />
+				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
+					<p className="mt-8 lg:mt-10 text-base text-gray-100">Let eTijar take the anxiety and hassle out of managing your finances. Instantly unlock insights on your spending.</p>
 					<form action="#" className="mt-5 sm:max-w-lg sm:w-full w-3/4 sm:flex">
 						<div className="min-w-0 flex-1">
 							<label htmlFor="hero_email" className="sr-only">
@@ -138,26 +143,27 @@ export default function HeroPlus() {
 							<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
 						</div>
 						<div className="mt-4 sm:mt-0 sm:ml-3">
-							<a href="" className="block w-full rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow bg-secondary-300 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
+							<a href="https://app.etijar.com" target="_blank" className="block w-full rounded border border-transparent px-5 py-3 text-base font-medium text-white shadow bg-primary-500 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
 								Get started
 							</a>
 						</div>
 					</form>
 				</div>
 			</div>
+			</div>
 			<div className="relative min-h-auto w-auto mt-32 bg-white">
 				<div className="w-auto flex justify-center flex-wrap px-8 md:px-32">
 					<div className="w-full text-center mb-10 lg:mb-20">
-						<h2 className="text-4xl md:text-6xl font-black text-gray-300">UNBURDEN YOURSELF</h2>
+						<h2 className="text-4xl md:text-6xl font-black text-gray-300"><span className=" text-secondary-500 opacity-60">UNBURDEN</span> YOURSELF</h2>
 					</div>
 
 					<div className=" w-full flex justify-around flex-wrap">
 						<div className="w-full relative flex justify-around flex-wrap mb-16 lg:mb-32">
 							<div className="w-1/2">
-								<img className="md:w-3/4 w-full h-auto p-3 bg-primary-300 shadow-2xl lg:mb-3 shapeless" src="legal-document.png" alt="legal-document" />
+								<img className="md:w-3/4 w-full h-auto lg:mb-3" src="legal-document.png" alt="legal-document" />
 							</div>
 							<div className="w-full lg:w-1/2 mb-10 lg:mb-2 mt-8 lg:mt-8 rounded-sm p-5 bg-white">
-								<h2 className="text-xl md:text-2xl text-primary-300 font-bold mb-3">
+								<h2 className="text-xl md:text-2xl text-primary-600 font-bold mb-3">
 									WASSIYAT <span className="text-gray-400 text-3xl md:text-5xl ml-2">وصیت</span>
 								</h2>
 								<p className="text-base text-gray-500">
@@ -170,10 +176,10 @@ export default function HeroPlus() {
 					<div className=" w-full flex justify-around flex-wrap mb-6 lg:mb-10">
 						<div className="w-full relative flex justify-around flex-wrap flex-row-reverse">
 							<div className="w-1/2">
-								<img className="md:w-3/4 w-full p-3 bg-primary-300 shadow-2xl shapeless h-auto ml-0 lg:ml-8" src="zakat.png" alt="zakat" />
+								<img className="md:w-3/4 w-full h-auto ml-0 lg:ml-8" src="zakat.png" alt="zakat" />
 							</div>
 							<div className="w-full lg:w-1/2 mb-10 lg:mb-2 mt-8 lg:mt-8 rounded-sm p-5 bg-white">
-								<h2 className="text-xl md:text-2xl text-primary-300 font-bold mb-3">
+								<h2 className="text-xl md:text-2xl text-primary-600 font-bold mb-3">
 									ZAKAT <span className="text-gray-400 text-3xl md:text-5xl ml-2">الزكاة</span>
 								</h2>
 								<p className="text-base text-gray-500">

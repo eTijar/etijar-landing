@@ -18,10 +18,10 @@ export default function Contact() {
 			</div> */}
 			<div className="relative w-full flex justify-center items-start md:flex-nowrap flex-wrap contact">
 				<div className="md:w-3/6 w-full px-4 sm:px-6 lg:px-8 pt-16">
-					<div  className="text-primary-300 text-5xl text-center text-bold text-shadow md:w-auto relative w-full z-20">Contact us</div>
+					<div  className="text-primary-400 text-5xl text-center text-bold text-shadow md:w-auto mb-6 sm:mb-0 relative w-full z-20">Contact us</div>
 					<motion.div initial={{y:'-20%', width:200, height:200,}} 
                  animate={{y:'-10%', width:'100%', height: '500px', transition: {delay: .2, ...transition}}} className="">
-					<img className="relative lg:-right-16 sm:right-0 right-0 z-10 w-full h-full" src="contact.png" alt="contact" />
+					<img className="relative lg:-right-16 sm:right-0 right-0 z-10 md:w-full w-26 md:h-full h-50" src="contact.png" alt="contact" />
 					</motion.div>
 				</div>
 
@@ -53,7 +53,7 @@ export default function Contact() {
 								<textarea id="message" name="message" rows={4} className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md" placeholder="Message" defaultValue={''} />
 							</div>
 							<div>
-								<button type="submit" className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-secondary-300 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+								<button type="submit" className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-secondary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
 									Submit
 								</button>
 							</div>
@@ -62,6 +62,9 @@ export default function Contact() {
 				</div>
 
 				</div>
+				{/**Start of etijar Zendesk Widget script**/}
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=8181c863-dc19-4ab9-9f8b-67ab2d9c5fa2"> </script>
+{/**End of etijar Zendesk Widget script**/}
 		</div>
 	);
 }
