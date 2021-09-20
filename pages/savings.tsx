@@ -79,27 +79,26 @@ export default function Savings() {
 				</div>
                 </div>
 
-                <div className="w-full flex flex-wrap justify-center lg:justify-between mt-32 px-12 sm:px-20 save">
-					<div className="relative w-4/6 md:w-3/6 h-auto flex justify-center flex-wrap">
-						<motion.img  className="w-auto h-auto relative -top-18" src="/options.jpg" alt="options" />
+                <div className="w-full flex flex-wrap justify-center lg:justify-around mb-16 mt-32 px-6 sm:px-12 save">
+                <div className="w-full text-center mb-6 lg:mb-20">
+						<h2 className="text-xl md:text-4xl font-black text-gray-300">SAVING <span className=" text-primary-500 opacity-60">OPTIONS</span></h2>
 					</div>
-					<div className="relative mt-16 md:mt-8 w-full lg:w-2/6 h-auto flex flex-col items-center flex-wrap mb-6">
-						<h2 className="text-primary-600 text-lg md:text-2xl m-4">SAVINGS OPTION</h2>
-						<div className="lg:w-full md:w-1/2 sm:w-full px-4 py-5 pb-2 mb-8 rounded-lg shadow-2xl rounded border font-base flex items-center flex-wrap heroo">
+					<div className="relative mt-16 md:mt-8 w-full h-auto flex justify-between flex-wrap mb-6">
+						<div className=" md:w-1/4 w-full px-4 py-5 pb-2 mb-8 rounded-lg shadow-2xl rounded border font-base flex items-center flex-wrap heroo">
 							<img className="w-12 h-12 mr-2 p-2 bg-blue-200 rounded-full shadow-xl" src="handcoin.png" alt="hand-coin" />
 							<div className="w-full mt-3 mb-3">
                             <p className=" text-primary-600">Cash Stash</p> 
                             </div> 
                             <p className="text-gray-500 text-sm"> Lock away lumpsum funds safely and earn no Riba. <span className="text-blue-300">Start from 50,000</span></p>
 						</div>
-                        <div className="lg:w-full md:w-1/2 sm:w-full px-4 py-5 pb-2 mb-8 rounded-lg shadow-2xl border rounded font-base flex items-center flex-wrap heroo">
+                        <div className="md:w-1/4 w-full px-4 py-5 pb-2 mb-8 rounded-lg shadow-2xl border rounded font-base flex items-center flex-wrap heroo">
 							<img className="w-12 h-12 mr-2 p-2 bg-blue-200 rounded-full shadow-xl" src="banking.png" alt="banking" />
 							<div className="w-full mt-3 mb-3">
                             <p className=" text-primary-600">Goal Stash</p> 
                             </div> 
                             <p className="text-gray-500 text-sm">Save a fixed amount periodically daily, weekly or monthly for set goals with Zero Interest and Zero charges. <span className="text-blue-300">Start from 50,000</span></p>
 						</div>
-                        <div className="lg:w-full md:w-1/2 sm:w-full px-4 py-5 pb-2 mb-8 rounded-lg shadow-2xl border rounded font-base flex items-center flex-wrap heroo">
+                        <div className="md:w-1/4 w-full px-4 py-5 pb-2 mb-8 rounded-lg shadow-2xl border rounded font-base flex items-center flex-wrap heroo">
 							<img className="w-12 h-12 mr-2 p-2 bg-blue-200 rounded-full shadow-xl" src="insight.png" alt="insight" />
 							<div className="w-full mt-3 mb-3">
                             <p className=" text-primary-600">Flex Stash</p> 

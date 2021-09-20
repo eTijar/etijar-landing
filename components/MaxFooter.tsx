@@ -19,8 +19,7 @@ export default function MaxFooter() {
                 </div>
                 </div>
                 <div className="mt-6 px-6 mb-16">
-                    <p className="text-primary-800 text-sm">eTijar.com is a property of eTijar Financial Technologies Limited, a company duly registered with the Corporate Affairs Commission of Nigeria. eTijar.com provides financial services in partnership with financial providers. All banking services and account numbers are provided by Sterling Bank Plc, regulated by the Central Bank of Nigeria, all funds are kept and managed by SEC licensed fund managers and Trustees. 
-Please note the indicative rate of return shall not be guaranteed and past performance does not guarantee future investment performance. The indicative rate of return is not fixed and may, as such, vary from time to time depending on the investment period and prevailing economic, political or social circumstances.
+                    <p className="text-primary-800 text-sm"> eTijar.com is a property of eTijar Financial Technologies Limited,a company duly registered with the Corporate Affairs Commission of Nigeria. eTijar.com provides financial services in partnership with financial providers. All banking services,savings and account numbers are managed by Alternative Finance &copy; the Non-interest banking window of Sterling Bank Plc,regulated by the central bank of nigeria,all Investments in Capital market funds are executed and managed by SEC licensed fund managers and Trustees. Please note the indicative rate of return shall not be guaranteed and past performance does not guarantee future investment performance.The indicative rate of return is not fixed and may,as such,vary from time to time depending on the investment period prevailing economic,political or social circumstances.   
                     </p>
                     </div>
                 </div>
