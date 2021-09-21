@@ -66,7 +66,7 @@ export default function Savings() {
 					</div>
                     </div>
                     </div>
-                    <div className="relative min-h-auto w-auto bg-blue-100 pt-2 pb-6 px-6 lg:px-3 lg:mx-10 mx-6 mt-10 flex md:justify-between justify-center items-center flex-wrap">
+                    <div className="relative min-h-auto w-auto bg-blue-100 py-2 px-6 lg:px-3 lg:mx-10 mx-6 mt-10 flex md:justify-between justify-center items-center flex-wrap">
                     <motion.img whileHover= {{scale:0.8}} className="w-3/6 md:w-2/6 mb-3 md:mb-0" src="savings-phone.png" alt="savings-phone" />
                 <div className="w-full md:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
 					<p className="text-xl text-primary-50">
