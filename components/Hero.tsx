@@ -1,13 +1,17 @@
 import Link from "next/link"
-import { useState } from "react";
 import Image from 'next/image';
 import Header from './Header'
 import phoneMockup from '../public/phoneMockup.png';
 import { motion, AnimatePresence, useTransform, useViewportScroll } from 'framer-motion'
+import { useState, useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const transition = { duration:1, ease: [0.43, 0.13, 0.23, 0.96] }
-
 export default function Hero() {
+	useEffect(()=> {
+		AOS.init();
+	});
   const [istoggled,setToggle] = useState(false);
   const {scrollYProgress} = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 4])
@@ -76,14 +80,17 @@ export default function Hero() {
 						
 							                                   {/*********for mobile****************/}
 							<div className="relative w-full flex flex-col items-center p-6">
-							<div className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-10 p-5 w-full shadow-lg rounded flex items-center flex-col">
+							<div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-10 p-5 w-full shadow-lg rounded flex items-center flex-col">
 								<img className="w-10 bg-secondary-300 p-2 rounded-full shadow-lg" src= "/connection.svg" alt="con" />
 							<div className="mt-5">Use secure Banking links to connect your bank accounts and credit cards
 							to view all your transactions in one place</div> </div>
-							<div className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
+							<div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
 							<img className="w-10 bg-secondary-600 p-2 rounded-full shadow-lg" src= "/target.svg" alt="target" />
 								<div className="mt-5">Achieve your financial goals without compromise </div></div>
-								<div className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
+								<div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
 							<img className="w-10 bg-secondary-600 p-2 rounded-full shadow-lg" src= "/stats.svg" alt="stats" />
 								<div className="mt-5"> Zero Interest, Transparent financing for 
 							small-businesses. Manage your business in one place </div></div>
