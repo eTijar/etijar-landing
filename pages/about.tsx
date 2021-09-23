@@ -38,8 +38,7 @@ const letter = {
 
 export default function About() {
     const imageSize = {
-        width:200,
-        height:200,
+        width:20,
     };
 
     return(
@@ -53,13 +52,14 @@ export default function About() {
 
                     {/*******************Header**********************/}
                 <Header />
-                <div className="w-full relative mt-10 px-6 py-40 magic">
+                <motion.div initial={{y:'-50%', width:imageSize.width,}} 
+                 animate={{y:'0%', width:'100%', transition: {delay: .2, ...transition}}} className="w-full relative mt-10 px-6 py-40 magic">
                     <div className=" w-full text-center pt-10 relative">
-                        <div className="text-gray-50 md:text-6xl text-5xl font-black text-shadow hero-eti">About eTijar</div>
+                        <motion.div initial={{y:'-100%'}} animate={{y:'0', transition: {delay: .4, ...transition}}} className="text-gray-50 md:text-6xl text-5xl font-black text-shadow hero-eti">About eTijar</motion.div>
                         <div className="absolute bg-blue-50  border shadow-2xl rounded md:w-1/2 w-3/4 px-3 py-6 mt-5 lg:ml-72 mt-16 md:ml-52 sm:ml-24 ml-12">
-                        <p className="text-primary-600 text-sm md:text-base">We love knowing where our money went, we love spending within our means, we wish to make investments 
+                        <motion.p initial={{opacity:'0'}} animate={{opacity:'1', transition: {delay: .8, ...transition}}}  className="text-primary-600 text-sm md:text-base">We love knowing where our money went, we love spending within our means, we wish to make investments 
                         so we have to save, this is why we built eTijar, an ethical non-interest Investment and finance platform for 
-                        all, anywhere in the world that is 100% halal compliant.</p>
+                        all, anywhere in the world that is 100% halal compliant.</motion.p>
                         </div>
                     </div>
                     <motion.div initial={{y:200, scale:0}} animate={{y:0, scale:1, transition: {delay: .2, ...transition}}} className="lg:w-1/2 md:w-1/2 sm:w-full w-full bg-red-blue flex flex-wrap justify-center relative">
@@ -71,7 +71,7 @@ export default function About() {
                 <img className="relative lg:w-3/4 md:w-2/4 w-full lg:h-90 h-full my-16" src = "about.png" alt="about"/>
     </motion.div>**/}
                 
-                </div>
+                </motion.div>
                 </div>
                 <div className="relative px-6 mt-40">
                    
