@@ -57,7 +57,7 @@ export default function About() {
                     <div className=" w-full text-center pt-10 relative">
                         <motion.div initial={{y:'-100%'}} animate={{y:'0', transition: {delay: .4, ...transition}}} className="text-gray-50 md:text-6xl text-5xl font-black text-shadow hero-eti">About eTijar</motion.div>
                         <div className="absolute bg-blue-50  border shadow-2xl rounded md:w-1/2 w-3/4 px-3 py-6 mt-5 lg:ml-72 mt-16 md:ml-52 sm:ml-24 ml-12">
-                        <motion.p initial={{opacity:'0'}} animate={{opacity:'1', transition: {delay: .8, ...transition}}}  className="text-primary-600 text-sm md:text-base">We love knowing where our money went, we love spending within our means, we wish to make investments 
+                        <motion.p initial={{opacity:'0'}} animate={{opacity:'1', transition: {delay: 1.3, ...transition}}}  className="text-primary-600 text-sm md:text-base">We love knowing where our money went, we love spending within our means, we wish to make investments 
                         so we have to save, this is why we built eTijar, an ethical non-interest Investment and finance platform for 
                         all, anywhere in the world that is 100% halal compliant.</motion.p>
                         </div>
