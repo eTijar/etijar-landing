@@ -1,10 +1,12 @@
 import Link from "next/link"
 import Head from 'next/head';
-import {useState} from "react";
 import { motion } from 'framer-motion'
 import Header from '../components/Header'
 import MaxFooter from '../components/MaxFooter'
 import { FaMosque, FaLaptop, FaUsers, FaClock, FaMoneyCheckAlt, FaStarAndCrescent, FaExchangeAlt, FaCheck } from 'react-icons/fa'
+import { useState, useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const transition = {duration:1.2, ease: [0.6, 0.01, -0.05, 0.9]};
 
@@ -37,6 +39,9 @@ const letter = {
 };
 
 export default function About() {
+    useEffect(()=> {
+		AOS.init();
+	});
     const imageSize = {
         width:20,
     };
@@ -81,7 +86,7 @@ export default function About() {
                         <div className="px-8 flex justify-center items-center flex-wrap">
                             <img src="aboutMulti.png" alt="multi" className="md:w-2/4 w-full mt-4"/>
 
-                            <div className="md:w-2/4 w-full py-10 mb-8 px-3 bg-white md:-ml-24 ml-0 border-r-8 border-blue-900 shadow-lg">
+                            <div data-aos="zoom-in-right" data-aos-duration="1000" className="md:w-2/4 w-full py-10 mb-8 px-3 bg-white md:-ml-24 ml-0 border-r-8 border-blue-900 shadow-lg">
                             <p className="text-gray-500 text-base">With a multi-currency e-wallet back by a fully licensed Islamic bank that
                              is NDIC insured, which allows you to get non-interest financing for your business, 
                              with personal/business bill payments and acceptance.</p>
@@ -92,7 +97,7 @@ export default function About() {
                         <div className=" px-8 flex justify-center items-center flex-wrap flex-row-reverse">
                             <img src="aboutInsight.png" alt="abtInsight" className="md:w-2/4 w-full mt-4"/>
 
-                            <div className="md:w-2/4 w-full py-10 mb-8 px-3 bg-white md:-mr-24 mr-0 border-l-8 border-blue-900 shadow-lg">
+                            <div data-aos="zoom-in-left" data-aos-duration="1000" className="md:w-2/4 w-full py-10 mb-8 px-3 bg-white md:-mr-24 mr-0 border-l-8 border-blue-900 shadow-lg">
                             <p className="text-gray-500 text-base">eTijar helps you gain insights on your debt, expenses, budget, and increase in your savings
                              that leads to investments for your future income with selected shariah-compliant equities and index funds. 
                              eTijar is 100% interest free and 100% Halal.</p>
@@ -101,22 +106,26 @@ export default function About() {
                         </div>
                         </div>
                         <div className="relative w-full px-6 mt-16 mb-4 flex justify-around flex-wrap">
-                        <div className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-100 hover:shadow-2xl duration-100">
+                        <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-100 hover:shadow-2xl duration-100">
                             <div className="text-primary-400 text-5xl w-10 px-2 flex items-center justify-center rounded-lg bg-blue-200 shadow-lg mb-3 hover:bg-white"><FaMosque/></div>
                             <h3 className="text-lg font-bold mb-2 text-primary-600">Shariah Compliant</h3>
                             <p className="text-base text-gray-500">Your investments are screened against Islamic principles to give you piece of mind.</p>
                         </div>
-                        <div className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-100 hover:shadow-2xl duration-100">
+                        <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-100 hover:shadow-2xl duration-100">
                             <div className="text-primary-400 text-5xl w-10 px-2 flex items-center justify-center rounded-lg bg-blue-200 shadow-lg mb-3 hover:bg-white"><FaLaptop/></div>
                             <h3 className="text-lg font-bold mb-2 text-primary-600">Tailored Investment Plan</h3>
                             <p className="text-base text-gray-500">We analyze your investment objectives and risk preferences to help you make informed decisions.</p>
                         </div>
-                        <div className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-100 hover:shadow-2xl duration-100">
+                        <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-100 hover:shadow-2xl duration-100">
                             <div className="text-primary-400 text-5xl w-10 px-2 flex items-center justify-center rounded-lg bg-blue-200 shadow-lg mb-3 hover:bg-white"><FaUsers/></div>
                             <h3 className="text-lg font-bold mb-2 text-primary-600">Professional Management</h3>
                             <p className="text-base text-gray-500">Your investments are managed by experienced and professional fund managers.</p>
                         </div>
-                        <div className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-100 hover:shadow-2xl duration-100">
+                        <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="md:w-1/4 w-full mb-10 p-4 rounded-lg text-gray-600 hover:text-white hover:bg-primary-100 hover:shadow-2xl duration-100">
                             <div className="text-primary-400 text-5xl w-10 px-2 flex items-center justify-center rounded-lg bg-blue-200 shadow-lg mb-3 hover:bg-white"><FaClock/></div>
                             <h3 className="text-lg font-bold mb-2 text-primary-600">Regular Savings Plan</h3>
                             <p className="text-base text-gray-500">A monthly investment plan that helps you reach financial goals faster and easier.</p>
@@ -129,14 +138,14 @@ export default function About() {
                     <h2 className="text-2xl md:text-5xl font-black text-secondary-300 text-shadow mb-6 lg:mb-0">Our Mission</h2>
                     </div>
                     <div className=" w-full flex lg:justify-between justify-center flex-wrap">
-                        <div className=" relative w-3/4 lg:w-2/4 mb-20 lg:mb-2 bg-blue-50 shapeless rounded-sm py-5 px-8 text-sm text-gray-500 shadow-2xl">
+                        <div data-aos="zoom-out-up" data-aos-duration="1000" className=" relative w-3/4 lg:w-2/4 mb-20 lg:mb-2 bg-blue-50 shapeless rounded-sm py-5 px-8 text-sm text-gray-500 shadow-2xl">
                             <FaMoneyCheckAlt className=" text-4xl mb-2 text-secondary-300"/>
                         <h2 className="text-base text-primary-600 font-bold mb-3">Lower the costs and barriers of financing and investing for everyday people</h2>
                         At eTijar, we want to lead and drive financial independence and inclusion across the greater African region. Money is a medium of social
                          exchange and we are building the fabric to connect every member of this society together from individuals to business owners to freelancers and beyond. Our human-first and customer-centric approach will make the difference
                           
                         </div>
-                        <div className="relative w-3/4 lg:w-2/4 mb-20 lg:mb-2 bg-white rounded-sm py-5 px-8 text-sm text-gray-500">
+                        <div data-aos="zoom-out-down" data-aos-duration="1000" className="relative w-3/4 lg:w-2/4 mb-20 lg:mb-2 bg-white rounded-sm py-5 px-8 text-sm text-gray-500">
                         <FaStarAndCrescent className=" text-4xl mb-2 text-secondary-300"/>
                         <h2 className="text-base text-primary-600 font-bold mb-3">eTijar Halal Investment</h2>
                         eTijar helps you invest in a shariah acceptable way, in fully-diversified portfolios of low-cost Halal index funds, equities and alternative investments, based o
@@ -144,13 +153,13 @@ export default function About() {
                         </div>
                         </div>
                         <div className="w-full flex lg:justify-between justify-center flex-wrap mt-24">
-                        <div className="relative w-3/4 lg:w-2/4 mb-2 lg:mb-2 bg-white rounded-sm py-5 px-8 text-sm text-gray-500">
+                        <div data-aos="zoom-out-down" data-aos-duration="1000" className="relative w-3/4 lg:w-2/4 mb-2 lg:mb-2 bg-white rounded-sm py-5 px-8 text-sm text-gray-500">
                         <FaExchangeAlt className=" text-4xl mb-2 text-secondary-300"/>
                         <h2 className="text-base text-primary-600 font-bold mb-3">An ethical non-interest Investment and finance platform for all, anywhere in the world</h2>
                         A multi-currency e-wallet that allows you to get Non-Interest financing, personal/business bill payments and acceptance.
                         eTijar helps you to exchange, spend and send money at the best possible rates. Build an asset portfolio for your future income with selected shariah-compliant equities and index funds.
                         </div>
-                        <div className="relative w-3/4 lg:w-2/4 mb-2 lg:mb-2 bg-blue-50 rounded-sm py-5 px-8 text-sm text-gray-500 shadow-2xl">
+                        <div data-aos="zoom-out-up" data-aos-duration="1000" className="relative w-3/4 lg:w-2/4 mb-2 lg:mb-2 bg-blue-50 rounded-sm py-5 px-8 text-sm text-gray-500 shadow-2xl">
                         <FaCheck className=" text-4xl mb-2 text-secondary-300"/>
                         <h2 className="text-base text-primary-600 font-bold mb-3">Zero Interest, Transparent financing for Small-businesses</h2>
                         eTijar helps you build your small business and grow through ethical and shariah business rules.
@@ -165,7 +174,9 @@ export default function About() {
                     <svg className="relative -top-32" id="curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#083170" fill-opacity="1"
                      d="M0,160L80,138.7C160,117,320,75,480,90.7C640,107,800,181,960,197.3C1120,213,1280,171,1360,149.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
                    <div className="relative min-h-auto w-auto -mt-36 py-6  bg-primary-600 flex justify-around items-center flex-wrap">
-                    <img className="w-4/6 lg:w-2/6" src="time.png" alt="time" />
+                    <img data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className="w-4/6 lg:w-2/6" src="time.png" alt="time" />
                 <div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap px-10">
                 <p className="mt-5 lg:mt-4 mb-5 text-lg lg:text-2xl sm:text-xl text-gray-100">Stay organized, Save time and money with handy tools that keep your financial life organized.</p>
                 <p className="text-gray-100 text-base mb-4">At eTijar, we want to lead and drive financial independence and inclusion of Muslims across the greater African region. Money is a medium of social exchange. We are building the fabric to connect every member of this society, from individuals to small business owners to freelancers and beyond. Our human-first and customer-centric approach will make the difference. A digital wallet to help Muslims handle debt, save, invest, and spend money. With our app you can save and invest according to the tenets of shariah, you can pay out Zakat (personal income tax) and create a Will (Wassiyat).</p>
