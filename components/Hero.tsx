@@ -99,7 +99,7 @@ export default function Hero() {
 							</div>
 							
 					</div>
-					<div className="w-full relative mt-8">
+					<div className="w-full relative mt-16">
 							<div className="text-primary-800 text-shadow text-2xl md:text-3xl font-black text-center mb-6">As Featured In</div>
 							<div className="w-full relative flex justify-around items-center flex-wrap">
 

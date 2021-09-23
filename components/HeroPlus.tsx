@@ -56,27 +56,12 @@ export default function HeroPlus() {
 	];
 	return (
 		<>
-			<div className="relative min-h-auto w-auto md:mt-5 mt-16  pt-4 md:pt-2 bg-white ">
+			<div className="relative min-h-auto w-auto md:mt-5 mt-10  pt-4 md:pt-2 bg-white ">
 
 
-				<div className="w-full flex flex-wrap justify-center lg:justify-between px-12 sm:px-20">
-					<div className="relative w-full lg:w-2/6 h-auto flex justify-center flex-wrap">
-						<img data-aos="fade-up" data-aos-duration="2000" className="w-auto h-auto relative -top-18" src="/signup.png" alt="signup" />
-						<form action="#" className="-mt-5 sm:max-w-lg sm:w-full sm:flex">
-							<div className="min-w-0 flex-1">
-								<label htmlFor="hero_email" className="sr-only">
-									Email address
-								</label>
-								<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
-							</div>
-							<div className="mt-4 sm:mt-0 sm:ml-3">
-								<a href ="https://app.etijar.com" target="_blank" className="block w-full rounded border border-transparent px-5 py-3 text-base font-medium text-white shadow hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
-									Sign Up
-								</a>
-							</div>
-						</form>
-					</div>
-					<div className="relative md:mt-8 mt-32 w-full lg:w-2/6 h-auto flex flex-col flex-wrap blur mb-6">
+				<div className="w-full flex flex-wrap flex-row-reverse justify-center lg:justify-between px-12 sm:px-20">
+					
+					<div data-aos="fade-up" data-aos-duration="2000" className="relative md:mt-8 mt-10 w-full lg:w-2/6 h-auto flex flex-col flex-wrap blur mb-6">
 						<h2 className="text-primary-800 text-lg md:text-2xl m-4">At eTijar, we believe that the best opportunities should be seized, on your own terms.</h2>
 						<div className=" px-4 py-5 pb-2 rounded font-base text-gray-600 flex items-center heroo">
 							<img className="w-12 h-12 mr-2 p-2 bg-red-300 rounded shadow-xl" src="handcoin.png" alt="hand-coin" />
@@ -90,6 +75,24 @@ export default function HeroPlus() {
 							<img className="w-12 h-12 mr-2 p-2 bg-green-300 rounded shadow-xl" src="insight.png" alt="insight" />
 							<p>Get insights on your debt, expenses, set goals, and increase your savings that leads to Investments. Get started today with us for Free</p>
 						</div>
+					</div>
+					<div className="relative w-full lg:w-2/6 h-auto md:mt-0 mt-24 flex justify-center flex-wrap">
+						<img data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className="w-auto h-auto relative -top-18" src="/signup.png" alt="signup" />
+						<form action="#" className="-mt-5 sm:max-w-lg sm:w-full sm:flex">
+							<div className="min-w-0 flex-1">
+								<label htmlFor="hero_email" className="sr-only">
+									Email address
+								</label>
+								<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
+							</div>
+							<div className="mt-4 sm:mt-0 sm:ml-3">
+								<a href ="https://app.etijar.com" target="_blank" className="block w-full rounded border border-transparent px-5 py-3 text-base font-medium text-white shadow hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
+									Sign Up
+								</a>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
