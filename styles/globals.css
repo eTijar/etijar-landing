@@ -3,14 +3,16 @@
 @tailwind utilities;
 
 @import "./components/_all.css";
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 blockquote::before {
     content: '\201C';
 }
 
 blockquote::after {
     content: '\201D';
+}
+
+html{
+    font-family: Poppins;
+    font-size: 14px;
 }

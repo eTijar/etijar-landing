@@ -130,7 +130,7 @@ export default function HeroPlus() {
 				<div className="relative min-h-auto w-auto py-10 md:py-8 px-6 lg:px-3 lg:mx-10 mx-6  flex justify-around items-center flex-wrap flex-row-reverse">
 					<img data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" className="w-4/6 lg:w-2/6 p-3 shadow-2xl shapeless" src="investment.png" alt="investment" />
 					<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
-						<h3 className="text-xl md:text-2xl text-primary-800 font-bold mb-3 text-center mt-8 lg:mt-10  font-bold">An investment pot for your children</h3>
+						<h3 className="text-xl md:text-2xl text-primary-800 mb-3 text-center mt-8 lg:mt-10  font-bold">An investment pot for your children</h3>
 						<p className="text-base text-gray-100">Open an investment account for your child where you, your family and friends can all invest for your child’s future.</p>
 					</div>
 				</div>
@@ -230,7 +230,7 @@ export default function HeroPlus() {
 							))}
 						</div>
 					</div>
-					<p className="mt-4 text-lg text-gray-400 text-right px-4">
+					<p className="mt-4 text-lg text-gray-400 text-right px-4y">
 						Can’t find the answer you’re looking for? Reach out to our{' '}
 						<a href="#" className="font-medium text-primary-600 hover:text-primary-500">
 							customer support
