@@ -2,19 +2,20 @@ import Link from 'next/link';
 import { motion, AnimatePresence, useTransform, useViewportScroll } from 'framer-motion';
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaArrowRight } from 'react-icons/fa';
 import FAQs from './faqs';
+import { Disclosure } from '@headlessui/react';
 import { useState, useEffect } from 'react';
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
+import { ChevronUpIcon } from '@heroicons/react/outline';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function HeroPlus() {
-	useEffect(()=> {
+	useEffect(() => {
 		AOS.init();
 	});
 	const { scrollYProgress } = useViewportScroll();
 	const scale = useTransform(scrollYProgress, [0, 1, 1], [1, 0.5, 0.04]);
 	const show1 = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
-	const [active, setActive] = useState("");
+	const [active, setActive] = useState('');
 	const faqs = [
 		{
 			id: 'fone',
@@ -57,10 +58,7 @@ export default function HeroPlus() {
 	return (
 		<>
 			<div className="relative min-h-auto w-auto md:mt-5 mt-10  pt-4 md:pt-2 bg-white ">
-
-
 				<div className="w-full flex flex-wrap flex-row-reverse justify-center lg:justify-between px-12 sm:px-20">
-					
 					<div data-aos="fade-up" data-aos-duration="2000" className="relative md:mt-8 mt-10 w-full lg:w-2/6 h-auto flex flex-col flex-wrap blur mb-6">
 						<h2 className="text-primary-800 text-lg md:text-2xl m-4">At eTijar, we believe that the best opportunities should be seized, on your own terms.</h2>
 						<div className=" px-4 py-5 pb-2 rounded font-base text-gray-600 flex items-center heroo">
@@ -77,9 +75,7 @@ export default function HeroPlus() {
 						</div>
 					</div>
 					<div className="relative w-full lg:w-2/6 h-auto md:mt-0 mt-24 flex justify-center flex-wrap">
-						<img data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000" className="w-auto h-auto relative -top-18" src="/signup.png" alt="signup" />
+						<img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="w-auto h-auto relative -top-18" src="/signup.png" alt="signup" />
 						<form action="#" className="-mt-5 sm:max-w-lg sm:w-full sm:flex">
 							<div className="min-w-0 flex-1">
 								<label htmlFor="hero_email" className="sr-only">
@@ -88,7 +84,7 @@ export default function HeroPlus() {
 								<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
 							</div>
 							<div className="mt-4 sm:mt-0 sm:ml-3">
-								<a href ="https://app.etijar.com" target="_blank" className="block w-full rounded border border-transparent px-5 py-3 text-base font-medium text-white shadow hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
+								<a href="https://app.etijar.com" target="_blank" className="block w-full rounded border border-transparent px-5 py-3 text-base font-medium text-white shadow hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
 									Sign Up
 								</a>
 							</div>
@@ -97,31 +93,29 @@ export default function HeroPlus() {
 				</div>
 			</div>
 
-			
 			<div className="relative min-h-auto w-auto mb-32 md:mt-48 mt-32 bg-white">
 				<div className="w-auto flex justify-center flex-wrap px-8 md:px-20">
 					<div className="w-full text-center mb-6 lg:mb-20">
-						<h2 className="text-2xl md:text-6xl font-black text-gray-300">Three products, <span className=" text-secondary-500 opacity-60">One goal.</span></h2>
+						<h2 className="text-2xl md:text-6xl font-black text-gray-300">
+							Three products, <span className=" text-secondary-500 opacity-60">One goal.</span>
+						</h2>
 					</div>
 					<div className=" w-full flex justify-around flex-wrap">
-						<div data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className=" relative w-3/4 lg:w-1/4 mb-20 lg:mb-2 bg-white shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box1">
+						<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className=" relative w-3/4 lg:w-1/4 mb-20 lg:mb-2 bg-white shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box1">
 							<h2 className="text-lg text-primary-800 font-bold mb-3">Personal loans for the everyday borrower</h2>
 							eTijar offer access to personal loans for middle-income borrowers that need help with things like unexpected personal expenses in the form of Qard Hasn a Benevolent Loan at 0% interest forever.
 							<a href="/about" className="block mt-3 text-sm text-secondary-300 rounded font-bold hover:text-secondary-600 duration-100">
 								Learn more <FaArrowRight className="inline" />
 							</a>
 						</div>
-						<div data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="relative w-3/4 lg:w-1/4 mb-20 lg:mb-2 bg-white shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box2">
+						<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="relative w-3/4 lg:w-1/4 mb-20 lg:mb-2 bg-white shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box2">
 							<h2 className="text-lg text-primary-800 font-bold mb-3">Transparent financing for business</h2>
 							eTijar helps you build your small business and grow while staying within your personal beliefs, ethical and shariah business rules.
 							<a href="/about" className=" block mt-3 text-sm text-secondary-300 rounded font-bold hover:text-secondary-600 duration-100">
 								Learn more <FaArrowRight className="inline" />
 							</a>
 						</div>
-						<div data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="relative w-3/4 lg:w-1/4 mb-2 lg:mb-2 shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box3">
+						<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="relative w-3/4 lg:w-1/4 mb-2 lg:mb-2 shadow-xl rounded-sm p-5 text-sm text-gray-500 hover:bg-blue-50 duration-100 box3">
 							<h2 className="text-lg text-primary-800 font-bold mb-3">Ethical Wealth and Growth</h2>
 							You do not and should never compromise on your beliefs to make money. eTijar provides a means for you to invest and grow your money safely and securely for the medium and long-term that will not conflict with your belief or principles.
 							<a href="/about" className=" block mt-3 text-sm text-secondary-300 rounded font-bold hover:text-secondary-600 duration-100">
@@ -131,43 +125,44 @@ export default function HeroPlus() {
 					</div>
 				</div>
 			</div>
-			
-		<div className="bg-primary-50">
-			<div className="relative min-h-auto w-auto py-10 md:py-8 px-6 lg:px-3 lg:mx-10 mx-6  flex justify-around items-center flex-wrap flex-row-reverse">
-				<img data-aos="zoom-in-right"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="1000" className="w-4/6 lg:w-2/6 p-3 shadow-2xl shapeless" src="investment.png" alt="investment" />
-				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
-					<h3 className="text-xl md:text-2xl text-primary-800 font-bold mb-3 text-center mt-8 lg:mt-10  font-bold">An investment pot for your children</h3>
-					<p className="text-base text-gray-100">
-Open an investment account for your child where you, your family and friends can all invest for your child’s future.</p>
+
+			<div className="bg-primary-50">
+				<div className="relative min-h-auto w-auto py-10 md:py-8 px-6 lg:px-3 lg:mx-10 mx-6  flex justify-around items-center flex-wrap flex-row-reverse">
+					<img data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" className="w-4/6 lg:w-2/6 p-3 shadow-2xl shapeless" src="investment.png" alt="investment" />
+					<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
+						<h3 className="text-xl md:text-2xl text-primary-800 font-bold mb-3 text-center mt-8 lg:mt-10  font-bold">An investment pot for your children</h3>
+						<p className="text-base text-gray-100">Open an investment account for your child where you, your family and friends can all invest for your child’s future.</p>
+					</div>
 				</div>
-				
-			</div>
-			<div className="relative min-h-auto w-auto py-10 md:py-5 px-6 lg:px-3 lg:mx-10 mx-6 flex justify-around items-center flex-wrap">
-				<img data-aos="zoom-in-left"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="1000" className="w-4/6 lg:w-2/6 p-3 shadow-2xl shapeless" src="anxiety.png" alt="anxiety" />
-				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
-					<p className="mt-8 lg:mt-10 text-base text-gray-100">Let eTijar take the anxiety and hassle out of managing your finances. Instantly unlock insights on your spending.</p>
-					<form action="#" className="mt-5 sm:max-w-lg sm:w-full w-3/4 sm:flex">
-						<div className="min-w-0 flex-1">
-							<label htmlFor="hero_email" className="sr-only">
-								Email address
-							</label>
-							<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
-						</div>
-						<div className="mt-4 sm:mt-0 sm:ml-3">
-							<a href="https://app.etijar.com" target="_blank" className="block w-full rounded border border-transparent px-5 py-3 text-base font-medium text-white shadow bg-primary-500 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
-								Get started
-							</a>
-						</div>
-					</form>
+				<div className="relative min-h-auto w-auto py-10 md:py-5 px-6 lg:px-3 lg:mx-10 mx-6 flex justify-around items-center flex-wrap">
+					<img data-aos="zoom-in-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" className="w-4/6 lg:w-2/6 p-3 shadow-2xl shapeless" src="anxiety.png" alt="anxiety" />
+					<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
+						<p className="mt-8 lg:mt-10 text-base text-gray-100">Let eTijar take the anxiety and hassle out of managing your finances. Instantly unlock insights on your spending.</p>
+						<form action="#" className="mt-5 sm:max-w-lg sm:w-full w-3/4 sm:flex">
+							<div className="min-w-0 flex-1">
+								<label htmlFor="hero_email" className="sr-only">
+									Email address
+								</label>
+								<input id="hero_email" type="email" className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-secondary-500 focus:ring-secondary-500" placeholder="Enter your email" />
+							</div>
+							<div className="mt-4 sm:mt-0 sm:ml-3">
+								<a
+									href="https://app.etijar.com"
+									target="_blank"
+									className="block w-full rounded border border-transparent px-5 py-3 text-base font-medium text-white shadow bg-primary-500 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:px-10 hero-btn">
+									Get started
+								</a>
+							</div>
+						</form>
+					</div>
 				</div>
-			</div>
 			</div>
 			<div className="relative min-h-auto w-auto mt-32 bg-white">
 				<div className="w-auto flex justify-center flex-wrap px-8 md:px-32">
 					<div className="w-full text-center mb-10 lg:mb-20">
-						<h2 className="text-4xl md:text-6xl font-black text-gray-300"><span className=" text-secondary-500 opacity-60">UNBURDEN</span> YOURSELF</h2>
+						<h2 className="text-4xl md:text-6xl font-black text-gray-300">
+							<span className=" text-secondary-500 opacity-60">UNBURDEN</span> YOURSELF
+						</h2>
 					</div>
 
 					<div className=" w-full flex justify-around flex-wrap">
@@ -175,8 +170,7 @@ Open an investment account for your child where you, your family and friends can
 							<div className="w-1/2">
 								<img className="md:w-3/4 w-full h-auto lg:mb-3" src="legal-document.png" alt="legal-document" />
 							</div>
-							<div data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="w-full lg:w-1/2 mb-10 lg:mb-2 mt-8 lg:mt-8 rounded-sm p-5 bg-white">
+							<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="w-full lg:w-1/2 mb-10 lg:mb-2 mt-8 lg:mt-8 rounded-sm p-5 bg-white">
 								<h2 className="text-xl md:text-2xl text-primary-600 font-bold mb-3">
 									WASSIYAT <span className="text-gray-400 text-3xl md:text-5xl ml-2">وصیت</span>
 								</h2>
@@ -192,8 +186,7 @@ Open an investment account for your child where you, your family and friends can
 							<div className="w-1/2">
 								<img className="md:w-3/4 w-full h-auto ml-0 lg:ml-8" src="zakat.png" alt="zakat" />
 							</div>
-							<div data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="w-full lg:w-1/2 mb-10 lg:mb-2 mt-8 lg:mt-8 rounded-sm p-5 bg-white">
+							<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="w-full lg:w-1/2 mb-10 lg:mb-2 mt-8 lg:mt-8 rounded-sm p-5 bg-white">
 								<h2 className="text-xl md:text-2xl text-primary-600 font-bold mb-3">
 									ZAKAT <span className="text-gray-400 text-3xl md:text-5xl ml-2">الزكاة</span>
 								</h2>
@@ -208,27 +201,43 @@ Open an investment account for your child where you, your family and friends can
 			</div>
 			{/*frequently asked questions*/}
 
-			<div className="relative min-h-auto w-auto pb-4  px-3 lg:px-0 lg:mx-32 md:mx-16 mx-10 flex justify-around items-start flex-wrap">
-				<img data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000" className="w-4/6 lg:w-2/6" src="faq.png" alt="faq" />
-				<div className="w-full lg:w-3/6 h-full justify-center lg:justify-start flex items-center flex-wrap">
-					<p className="mt-5 lg:mt-32 text-lg lg:text-xl text-gray-700">
-						{' '}
-						You still have plenty of questions to ask? Checkout our <span className="text-green-600">Frequently Asked Question</span>
-					</p>
+			<div className="relative min-h-auto w-auto pb-4  px-3 lg:px-0 lg:mx-32 md:mx-16 mx-10 lg:grid lg:grid-cols-2">
+				<div>
+					<img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="w-full" src="faq.png" alt="faq" />
+					{/* <div className="w-full  h-full justify-center lg:justify-start flex items-center flex-wrap">
+						<p className="mt-5 text-lg lg:text-xl text-gray-700">
+							{' '}
+							You still have plenty of questions to ask? Checkout our <span className="text-green-600">Frequently Asked Question</span>
+						</p>
+					</div> */}
 				</div>
 				{/******************************frequently asked questions component************************/}
-				{faqs.map((item) => (
-					<FAQs active={active} setActive={setActive} {...item} key={item.id} />
-				))}
-				<p className="mt-4 text-lg text-gray-500">
-					Can’t find the answer you’re looking for? Reach out to our{' '}
-					<a href="#" className="font-medium text-primary-600 hover:text-primary-500">
-						customer support
-					</a>{' '}
-					team.
-				</p>
+				<div>
+					<div className="w-full px-4 pt-16">
+						<div className="w-full max-w-3xl p-2 mx-auto bg-white rounded-2xl space-y-2">
+							{faqs.map((item, index) => (
+								<Disclosure key={`faq-${index}`} as="div" className="my-2">
+									{({ open }) => (
+										<>
+											<Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-blue-900 bg-blue-100 rounded-lg hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75">
+												<span>{item.accTitle}</span>
+												<ChevronUpIcon className={`${open ? 'transform rotate-180' : ''} w-5 h-5 text-blue-500`} />
+											</Disclosure.Button>
+											<Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">{item.accContent}</Disclosure.Panel>
+										</>
+									)}
+								</Disclosure>
+							))}
+						</div>
+					</div>
+					<p className="mt-4 text-lg text-gray-400 text-right px-4">
+						Can’t find the answer you’re looking for? Reach out to our{' '}
+						<a href="#" className="font-medium text-primary-600 hover:text-primary-500">
+							customer support
+						</a>{' '}
+						team.
+					</p>
+				</div>
 			</div>
 		</>
 	);
