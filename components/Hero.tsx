@@ -25,7 +25,7 @@ export default function Hero() {
 			<div className="colors3"></div>
 			<div className="colors4"></div>
 			<motion.div className="relative pt-10 pb-5 lg:pb-16 heroo">
-				<main className=" w-full mt-16  px-4 sm:mt-24 px-4 lg:px-10 sm:px-6 lg:mt-24">
+				<main className=" w-full mt-16  sm:mt-24 px-4 lg:px-10 sm:px-6 lg:mt-24">
 					<div className="lg:grid lg:grid-cols-12 lg:gap-8">
 						<div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
 							<div className="">
@@ -88,26 +88,26 @@ export default function Hero() {
 						<div className="mt-10 p-6 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
 							<motion.img style={{ scale: scale }} className="w-full rounded-lg" src="/phoneMockup.png" alt="heroimg" />
 
-							<motion.div initial={{ scale: 0.4 }} animate={{ scale: 1 }} transition={transition} className="sm:block hidden absolute p-3 w-72 border bg-white text-xs shadow-xl rounded-lg flex items-center flex-col glass-two">
+							<motion.div initial={{ scale: 0.4 }} animate={{ scale: 1 }} transition={transition} className="sm:block absolute p-3 w-72 border bg-white text-xs shadow-xl rounded-lg flex items-center flex-col glass-two">
 								<img className="w-8 bg-secondary-500 p-1 rounded-full" src="/connection.svg" alt="con" />
 								<div className="">Use secure Banking links to connect your bank accounts and credit cards to view all your transactions in one place</div>{' '}
 							</motion.div>
-							<motion.div initial={{ scale: 0.4 }} animate={{ scale: 1 }} transition={transition} className="sm:block hidden absolute p-3 w-72 border bg-white text-xs shadow-xl rounded-lg flex items-center flex-col glass-three">
+							<motion.div initial={{ scale: 0.4 }} animate={{ scale: 1 }} transition={transition} className="sm:block absolute p-3 w-72 border bg-white text-xs shadow-xl rounded-lg flex items-center flex-col glass-three">
 								<img className="w-8 bg-secondary-500 p-1 rounded-full" src="/target.svg" alt="target" />
 								<div className=""> Achieve your financial goals without compromise </div>
 							</motion.div>
 
 							{/*********for mobile****************/}
 							<div className="relative w-full flex flex-col items-center p-6">
-								<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-10 p-5 w-full shadow-lg rounded flex items-center flex-col">
+								<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-10 p-5 w-full shadow-lg rounded flex items-center flex-col">
 									<img className="w-10 bg-secondary-300 p-2 rounded-full shadow-lg" src="/connection.svg" alt="con" />
 									<div className="mt-5">Use secure Banking links to connect your bank accounts and credit cards to view all your transactions in one place</div>{' '}
 								</div>
-								<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
+								<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
 									<img className="w-10 bg-secondary-600 p-2 rounded-full shadow-lg" src="/target.svg" alt="target" />
 									<div className="mt-5">Achieve your financial goals without compromise </div>
 								</div>
-								<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="block sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
+								<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="sm:hidden bg-white hover:bg-secondary-300 duration-100 mt-16 p-5 w-full shadow-lg rounded flex items-center flex-col">
 									<img className="w-10 bg-secondary-600 p-2 rounded-full shadow-lg" src="/stats.svg" alt="stats" />
 									<div className="mt-5"> Zero Interest, Transparent financing for small-businesses. Manage your business in one place </div>
 								</div>
