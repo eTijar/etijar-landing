@@ -3,6 +3,7 @@ import Link from "next/link"
 import { motion } from 'framer-motion'
 import Header from '../components/Header'
 import {useState} from "react";
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaArrowLeft } from 'react-icons/fa';
 
 const transition = {duration:1.2, ease: [0.6, 0.01, -0.05, 0.9]};
 
@@ -10,50 +11,54 @@ export default function Contact() {
     const [mobileMenu, setMobileMenu] = useState(false);
 
 	return (
-		<div className="relative w-full md:h-screen h-auto md:overflow-hidden overflow-visible bg-white conImg">
+		<div className="relative w-full md:h-screen h-auto md:overflow-hidden overflow-visible bg-white">
 			
 			
 			{/* <div className="absolute inset-0">
 				<div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
 			</div> */}
-			<div className="relative w-full flex justify-center items-start md:flex-nowrap flex-wrap contact">
-				<div className="md:w-3/6 w-full px-4 sm:px-6 lg:px-8 pt-16">
-					<div  className="text-primary-400 text-5xl text-center text-bold text-shadow md:w-auto mb-6 sm:mb-0 relative w-full z-20">Contact us</div>
-					<motion.div initial={{y:'-20%', width:200, height:200,}} 
-                 animate={{y:'-10%', width:'100%', height: '500px', transition: {delay: .2, ...transition}}} className="">
-					<img className="relative lg:-right-16 sm:right-0 right-0 z-10 md:w-full w-26 md:h-full h-50" src="contact.png" alt="contact" />
-					</motion.div>
+			<div className="relative w-full flex justify-center items-start md:flex-nowrap flex-wrap">
+
+				<div className="md:w-3/6 w-full h-screen px-4 sm:px-6 lg:px-8 pt-6 bg-primary-900 formm">
+					<a href="/"><motion.div className="text-blue-300 text-2xl font-bold"><FaArrowLeft /></motion.div></a>
+					<div className="w-full mt-32 px-8 flex flex-col items-center">
+						<div className="text-blue-300 text-lg text-center ">Use secure Banking links to connect your bank accounts and credit cards to view all your transactions in one place</div>
+						<div className="mt-40 cssArt1">
+							<img className="" src="lock.gif" alt="lockk"/>
+						</div>
+					</div>
+					
 				</div>
 
-				<div className="relative md:w-2/6 w-full h-full py-10 px-4 sm:px-6 lg:py-24 lg:px-16 conImg2 md:bg-transparent bg-primary-300">
-					<div className=" mx-auto">
-						<form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+				<div className="relative md:w-3/6 h-screen py-10 px-4 sm:px-6 lg:py-24 lg:px-16 bg-blue-50">
+					<div className=" mx-auto mt-16">
+						<form action="#" method="POST" className="grid grid-cols-1 gap-y-6 px-32">
 							<div>
 								<label htmlFor="full_name" className="sr-only">
-									Full name
+									Full Name
 								</label>
-								<input type="text" name="full_name" id="full_name" autoComplete="name" className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md" placeholder="Full name" />
+								<input type="text" name="full_name" id="full_name" autoComplete="name" className="block w-full py-3 px-4 mb-4 bg-transparent placeholder-gray-500 border-b-2 border-primary-500 focus:border-primary-300 outline-none" placeholder="Full name" />
 							</div>
 							<div>
 								<label htmlFor="email" className="sr-only">
 									Email
 								</label>
-								<input id="email" name="email" type="email" autoComplete="email" className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md" placeholder="Email" />
+								<input id="email" name="email" type="email" autoComplete="email" className="block w-full py-3 px-4 mb-4 bg-transparent placeholder-gray-500 border-b-2 border-primary-500 focus:border-primary-300 outline-none" placeholder="Email" />
 							</div>
 							<div>
 								<label htmlFor="phone" className="sr-only">
 									Phone
 								</label>
-								<input type="text" name="phone" id="phone" autoComplete="tel" className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md" placeholder="Phone" />
+								<input type="text" name="phone" id="phone" autoComplete="tel" className="block w-full py-3 px-4 mb-4 bg-transparent placeholder-gray-500 border-b-2 border-primary-500 focus:border-primary-300 outline-none" placeholder="Phone" />
 							</div>
 							<div>
 								<label htmlFor="message" className="sr-only">
 									Message
 								</label>
-								<textarea id="message" name="message" rows={4} className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md" placeholder="Message" defaultValue={''} />
+								<textarea id="message" name="message" rows={4} className="block w-full bg-blue-100 shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary-300 focus:border-primary-300 border-primary-500 outline-none" placeholder="Message" defaultValue={''} />
 							</div>
 							<div>
-								<button type="submit" className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-secondary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+								<button type="submit" className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-primary-700 hover:bg-secondary-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
 									Submit
 								</button>
 							</div>
