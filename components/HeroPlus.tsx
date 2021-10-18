@@ -92,6 +92,16 @@ export default function HeroPlus() {
 					</div>
 				</div>
 			</div>
+			<div className="relative bg-gradient-to-tr from-secondary-600 via-secondary-200 to-primary-800 min-h-auto w-auto px-6 lg:px-5 lg:mx-10 mx-6 lg:mt-32 mt-48 lg:py-28 py-0  flex justify-around items-center flex-wrap flex-row-reverse">
+					<img data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" className="lg:absolute relative lg:right-0 lg:-mt-0 lg:-mb-0 sm:-mt-40 sm:-mb-8 -mt-28 -mb-0 w-4/6 lg:w-3/6" src="download.png" alt="download" />
+					<div className="lg:w-full h-full justify-center ">
+						<h3 className="text-xl sm:text-3xl lg:text-4xl text-primary-600 mb-4 mt-8 lg:mt-10">eTijar App coming soon</h3>
+						<div className="w-full flex items-center ">
+						<a href=""><img className="sm:w-32 w-28 h-11 mr-2" src="apple.png" alt="apple"/></a>
+						<a href=""><img className="sm:w-40 w-32 sm:h-auto h-16 mr-2" src="google.png" alt="google"/></a>
+						</div>
+					</div>
+				</div>
 
 			<div className="relative min-h-auto w-auto mb-32 md:mt-48 mt-32 bg-white">
 				<div className="w-auto flex justify-center flex-wrap px-8 md:px-20">
