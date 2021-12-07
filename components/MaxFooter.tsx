@@ -56,11 +56,13 @@ export function MaxFooter1() {
 					</div>
 					<div className="flex flex-col justify-around w-52 mt-10 ">
 						<p className="font-bold text-primary-900 text-lg mb-4">Talk to a human</p>
-						<p className="text-primary-800">If you have any questions about eTijar or the services we are offering, you can email us at support@example.com</p>
+						<p className="text-primary-800">If you have any questions about eTijar or the services we are offering, you can email us at contact@etijar.com</p>
 					</div>
 					<div className="flex flex-col justify-around w-52 mt-10">
 						<p className="font-bold primary-900 text-lg mb-4">Contact</p>
 						<p className="text-primary-800">Plot 203 IEC Crescent, off Oladipo Diya Street, Durumi 2, Abuja</p>
+						<p className="text-primary-800">contact@etijar.com</p>
+						<p className="text-primary-800">07031986969</p>
 					</div>
 				</div>
 			</div>
@@ -179,12 +181,13 @@ export default function MaxFooter() {
 						<div className="md:grid md:grid-cols-2 md:gap-8 col-span-2">
 							<div>
 								<h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Talk to a human</h3>
-								<p className="text-gray-400 font-light mt-4">If you have any questions about eTijar or the services we are offering, you can email us at support@example.com</p>
+								<p className="text-gray-400 font-light mt-4">If you have any questions about eTijar or the services we are offering, you can email us at contact@etijar.com</p>
 							</div>
 							<div className="mt-12 md:mt-0">
 								<h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact</h3>
                                 <p className="text-gray-400 font-light mt-4">Plot 203 IEC Crescent, off Oladipo Diya Street, Durumi 2, Abuja</p>
-
+								<p className="text-gray-400 font-light mt-4">contact@etijar.com</p>
+								<p className="text-gray-400 font-light mt-4">07031986969</p>
 							</div>
 						</div>
 					</div>
@@ -195,7 +198,8 @@ export default function MaxFooter() {
 						Alternative Finance &copy; the Non-interest banking window of Sterling Bank Plc,regulated by the central bank of nigeria,all Investments in Capital market funds are executed and managed by SEC licensed fund managers and Trustees. Please note the indicative rate of return shall not be
 						guaranteed and past performance does not guarantee future investment performance.The indicative rate of return is not fixed and may,as such,vary from time to time depending on the investment period prevailing economic,political or social circumstances.
 					</p>
-					<p className="text-base mt-3 text-gray-400 xl:text-center">&copy; 2020 Workflow, Inc. All rights reserved.</p>
+					<p className="text-base mt-3 text-gray-400 xl:text-center">&copy; 2021 eTijar All rights reserved.</p>
+					{/*<p className="text-base mt-3 text-gray-400 xl:text-center">&copy; 2020 Workflow, Inc. All rights reserved.</p>*/}
 				</div>
 			</div>
 		</footer>
