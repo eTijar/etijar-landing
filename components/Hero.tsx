@@ -73,10 +73,10 @@ export default function Hero() {
 										<div className="py-16">
 											<p className="text-base font-semibold uppercase text-gray-600 tracking-wider">Featured In</p>
 											<div className="mt-6 grid grid-cols-3 gap-4 md:grid-cols-4 lg:mt-8">
-												<div className="col-span-1 flex justify-center bg-gray-100 py-2">
+												<div className="col-span-1 flex justify-center py-2">
 													<img className="max-h-10" src="ifn.png" alt="ifn" style={{ filter: 'grayscale(1)' }} />
 												</div>
-												<div className="col-span-1 flex justify-center bg-gray-100 py-2">
+												<div className="col-span-1 flex justify-center py-2">
 													<img className="max-h-8" src="proshare.png" alt="Proshare" style={{ filter: 'grayscale(1)' }} />
 												</div>
 											</div>
