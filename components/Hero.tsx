@@ -121,6 +121,9 @@ export default function Hero() {
 				{' '}
 			</script>
 			{/**End of etijar Zendesk Widget script**/}
+		{/**Global site tag (gtag.js) - Google Analytics**/}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2SJMJG6CT"></script>
+
 		</motion.div>
 	);
 }
